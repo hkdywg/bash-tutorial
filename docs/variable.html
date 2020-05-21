@@ -1,0 +1,829 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>变量 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="string.html" />
+    
+    
+    <link rel="prev" href="quotation.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="intro.html">
+            
+                <a href="intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="grammar.html">
+            
+                <a href="grammar.html">
+            
+                    
+                    基本语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="expansion.html">
+            
+                <a href="expansion.html">
+            
+                    
+                    模式扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="quotation.html">
+            
+                <a href="quotation.html">
+            
+                    
+                    引号和转义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="variable.html">
+            
+                <a href="variable.html">
+            
+                    
+                    变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="string.html">
+            
+                <a href="string.html">
+            
+                    
+                    字符串操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="arithmetic.html">
+            
+                <a href="arithmetic.html">
+            
+                    
+                    算术运算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="readline.html">
+            
+                <a href="readline.html">
+            
+                    
+                    行操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="stack.html">
+            
+                <a href="stack.html">
+            
+                    
+                    目录堆栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="script.html">
+            
+                <a href="script.html">
+            
+                    
+                    脚本入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="read.html">
+            
+                <a href="read.html">
+            
+                    
+                    read 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="condition.html">
+            
+                <a href="condition.html">
+            
+                    
+                    条件判断
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="loop.html">
+            
+                <a href="loop.html">
+            
+                    
+                    循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="function.html">
+            
+                <a href="function.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="array.html">
+            
+                <a href="array.html">
+            
+                    
+                    数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="set.html">
+            
+                <a href="set.html">
+            
+                    
+                    set 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="debug.html">
+            
+                <a href="debug.html">
+            
+                    
+                    脚本除错
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="mktemp.html">
+            
+                <a href="mktemp.html">
+            
+                    
+                    mktemp 命令，trap 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="startup.html">
+            
+                <a href="startup.html">
+            
+                    
+                    启动环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="prompt.html">
+            
+                <a href="prompt.html">
+            
+                    
+                    命令提示符
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >变量</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="bash-&#x53D8;&#x91CF;">Bash &#x53D8;&#x91CF;</h1>
+<p>Bash &#x53D8;&#x91CF;&#x5206;&#x6210;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x548C;&#x81EA;&#x5B9A;&#x4E49;&#x53D8;&#x91CF;&#x4E24;&#x7C7B;&#x3002;</p>
+<h2 id="&#x7B80;&#x4ECB;">&#x7B80;&#x4ECB;</h2>
+<p>&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x662F; Bash &#x73AF;&#x5883;&#x81EA;&#x5E26;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x8FDB;&#x5165; Shell &#x65F6;&#x5DF2;&#x7ECF;&#x5B9A;&#x4E49;&#x597D;&#x4E86;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x3002;&#x5B83;&#x4EEC;&#x901A;&#x5E38;&#x662F;&#x7CFB;&#x7EDF;&#x5B9A;&#x4E49;&#x597D;&#x7684;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7531;&#x7528;&#x6237;&#x4ECE;&#x7236; Shell &#x4F20;&#x5165;&#x5B50; Shell&#x3002;</p>
+<p><code>env</code>&#x547D;&#x4EE4;&#x6216;<code>printenv</code>&#x547D;&#x4EE4;&#xFF0C;&#x53EF;&#x4EE5;&#x663E;&#x793A;&#x6240;&#x6709;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x3002;</p>
+<pre><code class="lang-bash">$ env
+<span class="hljs-comment"># &#x6216;&#x8005;</span>
+$ printenv
+</code></pre>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E9B;&#x5E38;&#x89C1;&#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x3002;</p>
+<ul>
+<li><code>BASHPID</code>&#xFF1A;Bash &#x8FDB;&#x7A0B;&#x7684;&#x8FDB;&#x7A0B; ID&#x3002;</li>
+<li><code>BASHOPTS</code>&#xFF1A;&#x5F53;&#x524D; Shell &#x7684;&#x53C2;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;<code>shopt</code>&#x547D;&#x4EE4;&#x4FEE;&#x6539;&#x3002;</li>
+<li><code>DISPLAY</code>&#xFF1A;&#x56FE;&#x5F62;&#x73AF;&#x5883;&#x7684;&#x663E;&#x793A;&#x5668;&#x540D;&#x5B57;&#xFF0C;&#x901A;&#x5E38;&#x662F;<code>:0</code>&#xFF0C;&#x8868;&#x793A; X Server &#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x663E;&#x793A;&#x5668;&#x3002;</li>
+<li><code>EDITOR</code>&#xFF1A;&#x9ED8;&#x8BA4;&#x7684;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x3002;</li>
+<li><code>HOME</code>&#xFF1A;&#x7528;&#x6237;&#x7684;&#x4E3B;&#x76EE;&#x5F55;&#x3002;</li>
+<li><code>HOST</code>&#xFF1A;&#x5F53;&#x524D;&#x4E3B;&#x673A;&#x7684;&#x540D;&#x79F0;&#x3002;</li>
+<li><code>IFS</code>&#xFF1A;&#x8BCD;&#x4E0E;&#x8BCD;&#x4E4B;&#x95F4;&#x7684;&#x5206;&#x9694;&#x7B26;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x7A7A;&#x683C;&#x3002;</li>
+<li><code>LANG</code>&#xFF1A;&#x5B57;&#x7B26;&#x96C6;&#x4EE5;&#x53CA;&#x8BED;&#x8A00;&#x7F16;&#x7801;&#xFF0C;&#x6BD4;&#x5982;<code>zh_CN.UTF-8</code>&#x3002;</li>
+<li><code>PATH</code>&#xFF1A;&#x7531;&#x5192;&#x53F7;&#x5206;&#x5F00;&#x7684;&#x76EE;&#x5F55;&#x5217;&#x8868;&#xFF0C;&#x5F53;&#x8F93;&#x5165;&#x53EF;&#x6267;&#x884C;&#x7A0B;&#x5E8F;&#x540D;&#x540E;&#xFF0C;&#x4F1A;&#x641C;&#x7D22;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x5217;&#x8868;&#x3002;</li>
+<li><code>PS1</code>&#xFF1A;Shell &#x63D0;&#x793A;&#x7B26;&#x3002;</li>
+<li><code>PS2</code>&#xFF1A; &#x8F93;&#x5165;&#x591A;&#x884C;&#x547D;&#x4EE4;&#x65F6;&#xFF0C;&#x6B21;&#x8981;&#x7684; Shell &#x63D0;&#x793A;&#x7B26;&#x3002;</li>
+<li><code>PWD</code>&#xFF1A;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x3002;</li>
+<li><code>RANDOM</code>&#xFF1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;0&#x5230;32767&#x4E4B;&#x95F4;&#x7684;&#x968F;&#x673A;&#x6570;&#x3002;</li>
+<li><code>SHELL</code>&#xFF1A;Shell &#x7684;&#x540D;&#x5B57;&#x3002;</li>
+<li><code>SHELLOPTS</code>&#xFF1A;&#x542F;&#x52A8;&#x5F53;&#x524D; Shell &#x7684;<code>set</code>&#x547D;&#x4EE4;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x53C2;&#x89C1;&#x300A;set &#x547D;&#x4EE4;&#x300B;&#x4E00;&#x7AE0;&#x3002;</li>
+<li><code>TERM</code>&#xFF1A;&#x7EC8;&#x7AEF;&#x7C7B;&#x578B;&#x540D;&#xFF0C;&#x5373;&#x7EC8;&#x7AEF;&#x4EFF;&#x771F;&#x5668;&#x6240;&#x7528;&#x7684;&#x534F;&#x8BAE;&#x3002;</li>
+<li><code>UID</code>&#xFF1A;&#x5F53;&#x524D;&#x7528;&#x6237;&#x7684; ID &#x7F16;&#x53F7;&#x3002;</li>
+<li><code>USER</code>&#xFF1A;&#x5F53;&#x524D;&#x7528;&#x6237;&#x7684;&#x7528;&#x6237;&#x540D;&#x3002;</li>
+</ul>
+<p>&#x5F88;&#x591A;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x5F88;&#x5C11;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x800C;&#x4E14;&#x662F;&#x53EA;&#x8BFB;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x89C6;&#x4E3A;&#x5E38;&#x91CF;&#x3002;&#x7531;&#x4E8E;&#x5B83;&#x4EEC;&#x7684;&#x53D8;&#x91CF;&#x540D;&#x5168;&#x90E8;&#x90FD;&#x662F;&#x5927;&#x5199;&#xFF0C;&#x6240;&#x4EE5;&#x4F20;&#x7EDF;&#x4E0A;&#xFF0C;&#x5982;&#x679C;&#x7528;&#x6237;&#x8981;&#x81EA;&#x5DF1;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5E38;&#x91CF;&#xFF0C;&#x4E5F;&#x4F1A;&#x4F7F;&#x7528;&#x5168;&#x90E8;&#x5927;&#x5199;&#x7684;&#x53D8;&#x91CF;&#x540D;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;Bash &#x53D8;&#x91CF;&#x540D;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#xFF0C;<code>HOME</code>&#x548C;<code>home</code>&#x662F;&#x4E24;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x53D8;&#x91CF;&#x3002;</p>
+<p>&#x67E5;&#x770B;&#x5355;&#x4E2A;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x7684;&#x503C;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>printenv</code>&#x547D;&#x4EE4;&#x6216;<code>echo</code>&#x547D;&#x4EE4;&#x3002;</p>
+<pre><code class="lang-bash">$ printenv PATH
+<span class="hljs-comment"># &#x6216;&#x8005;</span>
+$ <span class="hljs-built_in">echo</span> <span class="hljs-variable">$PATH</span>
+</code></pre>
+<p>&#x6CE8;&#x610F;&#xFF0C;<code>printenv</code>&#x547D;&#x4EE4;&#x540E;&#x9762;&#x7684;&#x53D8;&#x91CF;&#x540D;&#xFF0C;&#x4E0D;&#x7528;&#x52A0;&#x524D;&#x7F00;<code>$</code>&#x3002;</p>
+<p>&#x81EA;&#x5B9A;&#x4E49;&#x53D8;&#x91CF;&#x662F;&#x7528;&#x6237;&#x5728;&#x5F53;&#x524D; Shell &#x91CC;&#x9762;&#x81EA;&#x5DF1;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x5FC5;&#x987B;&#x5148;&#x5B9A;&#x4E49;&#x540E;&#x4F7F;&#x7528;&#xFF0C;&#x800C;&#x4E14;&#x4EC5;&#x5728;&#x5F53;&#x524D; Shell &#x53EF;&#x7528;&#x3002;&#x4E00;&#x65E6;&#x9000;&#x51FA;&#x5F53;&#x524D; Shell&#xFF0C;&#x8BE5;&#x53D8;&#x91CF;&#x5C31;&#x4E0D;&#x5B58;&#x5728;&#x4E86;&#x3002;</p>
+<p><code>set</code>&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x663E;&#x793A;&#x6240;&#x6709;&#x53D8;&#x91CF;&#xFF08;&#x5305;&#x62EC;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x548C;&#x81EA;&#x5B9A;&#x4E49;&#x53D8;&#x91CF;&#xFF09;&#xFF0C;&#x4EE5;&#x53CA;&#x6240;&#x6709;&#x7684; Bash &#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">set</span>
+</code></pre>
+<h2 id="&#x521B;&#x5EFA;&#x53D8;&#x91CF;">&#x521B;&#x5EFA;&#x53D8;&#x91CF;</h2>
+<p>&#x7528;&#x6237;&#x521B;&#x5EFA;&#x53D8;&#x91CF;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53D8;&#x91CF;&#x540D;&#x5FC5;&#x987B;&#x9075;&#x5B88;&#x4E0B;&#x9762;&#x7684;&#x89C4;&#x5219;&#x3002;</p>
+<ul>
+<li>&#x5B57;&#x6BCD;&#x3001;&#x6570;&#x5B57;&#x548C;&#x4E0B;&#x5212;&#x7EBF;&#x5B57;&#x7B26;&#x7EC4;&#x6210;&#x3002;</li>
+<li>&#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x6BCD;&#x6216;&#x4E00;&#x4E2A;&#x4E0B;&#x5212;&#x7EBF;&#xFF0C;&#x4E0D;&#x80FD;&#x662F;&#x6570;&#x5B57;&#x3002;</li>
+<li>&#x4E0D;&#x5141;&#x8BB8;&#x51FA;&#x73B0;&#x7A7A;&#x683C;&#x548C;&#x6807;&#x70B9;&#x7B26;&#x53F7;&#x3002;</li>
+</ul>
+<p>&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x7684;&#x8BED;&#x6CD5;&#x5982;&#x4E0B;&#x3002;</p>
+<pre><code class="lang-bash">variable=value
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x547D;&#x4EE4;&#x4E2D;&#xFF0C;&#x7B49;&#x53F7;&#x5DE6;&#x8FB9;&#x662F;&#x53D8;&#x91CF;&#x540D;&#xFF0C;&#x53F3;&#x8FB9;&#x662F;&#x53D8;&#x91CF;&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x7B49;&#x53F7;&#x4E24;&#x8FB9;&#x4E0D;&#x80FD;&#x6709;&#x7A7A;&#x683C;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x5305;&#x542B;&#x7A7A;&#x683C;&#xFF0C;&#x5219;&#x5FC5;&#x987B;&#x5C06;&#x503C;&#x653E;&#x5728;&#x5F15;&#x53F7;&#x4E2D;&#x3002;</p>
+<pre><code class="lang-bash">myvar=<span class="hljs-string">&quot;hello world&quot;</span>
+</code></pre>
+<p>Bash &#x6CA1;&#x6709;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x53D8;&#x91CF;&#x503C;&#x90FD;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E9B;&#x81EA;&#x5B9A;&#x4E49;&#x53D8;&#x91CF;&#x7684;&#x4F8B;&#x5B50;&#x3002;</p>
+<pre><code class="lang-bash">a=z                     <span class="hljs-comment"># &#x53D8;&#x91CF; a &#x8D4B;&#x503C;&#x4E3A;&#x5B57;&#x7B26;&#x4E32; z</span>
+b=<span class="hljs-string">&quot;a string&quot;</span>            <span class="hljs-comment"># &#x53D8;&#x91CF;&#x503C;&#x5305;&#x542B;&#x7A7A;&#x683C;&#xFF0C;&#x5C31;&#x5FC5;&#x987B;&#x653E;&#x5728;&#x5F15;&#x53F7;&#x91CC;&#x9762;</span>
+c=<span class="hljs-string">&quot;a string and <span class="hljs-variable">$b</span>&quot;</span>     <span class="hljs-comment"># &#x53D8;&#x91CF;&#x503C;&#x53EF;&#x4EE5;&#x5F15;&#x7528;&#x5176;&#x4ED6;&#x53D8;&#x91CF;&#x7684;&#x503C;</span>
+d=<span class="hljs-string">&quot;\t\ta string\n&quot;</span>      <span class="hljs-comment"># &#x53D8;&#x91CF;&#x503C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8F6C;&#x4E49;&#x5B57;&#x7B26;</span>
+e=$(ls <span class="hljs-_">-l</span> foo.txt)      <span class="hljs-comment"># &#x53D8;&#x91CF;&#x503C;&#x53EF;&#x4EE5;&#x662F;&#x547D;&#x4EE4;&#x7684;&#x6267;&#x884C;&#x7ED3;&#x679C;</span>
+f=$((5 * 7))            <span class="hljs-comment"># &#x53D8;&#x91CF;&#x503C;&#x53EF;&#x4EE5;&#x662F;&#x6570;&#x5B66;&#x8FD0;&#x7B97;&#x7684;&#x7ED3;&#x679C;</span>
+</code></pre>
+<p>&#x53D8;&#x91CF;&#x53EF;&#x4EE5;&#x91CD;&#x590D;&#x8D4B;&#x503C;&#xFF0C;&#x540E;&#x9762;&#x7684;&#x8D4B;&#x503C;&#x4F1A;&#x8986;&#x76D6;&#x524D;&#x9762;&#x7684;&#x8D4B;&#x503C;&#x3002;</p>
+<pre><code class="lang-bash">$ foo=1
+$ foo=2
+$ <span class="hljs-built_in">echo</span> <span class="hljs-variable">$foo</span>
+2
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x53D8;&#x91CF;<code>foo</code>&#x7684;&#x7B2C;&#x4E8C;&#x6B21;&#x8D4B;&#x503C;&#x4F1A;&#x8986;&#x76D6;&#x7B2C;&#x4E00;&#x6B21;&#x8D4B;&#x503C;&#x3002;</p>
+<h2 id="&#x8BFB;&#x53D6;&#x53D8;&#x91CF;">&#x8BFB;&#x53D6;&#x53D8;&#x91CF;</h2>
+<p>&#x8BFB;&#x53D6;&#x53D8;&#x91CF;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x76F4;&#x63A5;&#x5728;&#x53D8;&#x91CF;&#x540D;&#x524D;&#x52A0;&#x4E0A;<code>$</code>&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</p>
+<pre><code class="lang-bash">$ foo=bar
+$ <span class="hljs-built_in">echo</span> <span class="hljs-variable">$foo</span>
+bar
+</code></pre>
+<p>&#x6BCF;&#x5F53; Shell &#x770B;&#x5230;&#x4EE5;<code>$</code>&#x5F00;&#x5934;&#x7684;&#x5355;&#x8BCD;&#x65F6;&#xFF0C;&#x5C31;&#x4F1A;&#x5C1D;&#x8BD5;&#x8BFB;&#x53D6;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x540D;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x53D8;&#x91CF;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;Bash &#x4E0D;&#x4F1A;&#x62A5;&#x9519;&#xFF0C;&#x800C;&#x4F1A;&#x8F93;&#x51FA;&#x7A7A;&#x5B57;&#x7B26;&#x3002;</p>
+<p>&#x7531;&#x4E8E;<code>$</code>&#x5728; Bash &#x4E2D;&#x6709;&#x7279;&#x6B8A;&#x542B;&#x4E49;&#xFF0C;&#x628A;&#x5B83;&#x5F53;&#x4F5C;&#x7F8E;&#x5143;&#x7B26;&#x53F7;&#x4F7F;&#x7528;&#x65F6;&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x975E;&#x5E38;&#x5C0F;&#x5FC3;&#xFF0C;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">echo</span> The total is <span class="hljs-variable">$100</span>.00
+The total is 00.00
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x547D;&#x4EE4;&#x7684;&#x539F;&#x610F;&#x662F;&#x8F93;&#x5165;<code>$100</code>&#xFF0C;&#x4F46;&#x662F; Bash &#x5C06;<code>$1</code>&#x89E3;&#x91CA;&#x6210;&#x4E86;&#x53D8;&#x91CF;&#xFF0C;&#x8BE5;&#x53D8;&#x91CF;&#x4E3A;&#x7A7A;&#xFF0C;&#x56E0;&#x6B64;&#x8F93;&#x5165;&#x5C31;&#x53D8;&#x6210;&#x4E86;<code>00.00</code>&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x4F7F;&#x7528;<code>$</code>&#x7684;&#x539F;&#x4E49;&#xFF0C;&#x9700;&#x8981;&#x5728;<code>$</code>&#x524D;&#x9762;&#x653E;&#x4E0A;&#x53CD;&#x659C;&#x6760;&#xFF0C;&#x8FDB;&#x884C;&#x8F6C;&#x4E49;&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">echo</span> The total is \<span class="hljs-variable">$100</span>.00
+The total is <span class="hljs-variable">$100</span>.00
+</code></pre>
+<p>&#x8BFB;&#x53D6;&#x53D8;&#x91CF;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53D8;&#x91CF;&#x540D;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x82B1;&#x62EC;&#x53F7;<code>{}</code>&#x5305;&#x56F4;&#xFF0C;&#x6BD4;&#x5982;<code>$a</code>&#x4E5F;&#x53EF;&#x4EE5;&#x5199;&#x6210;<code>${a}</code>&#x3002;&#x8FD9;&#x79CD;&#x5199;&#x6CD5;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x53D8;&#x91CF;&#x540D;&#x4E0E;&#x5176;&#x4ED6;&#x5B57;&#x7B26;&#x8FDE;&#x7528;&#x7684;&#x60C5;&#x51B5;&#x3002;</p>
+<pre><code class="lang-bash">$ a=foo
+$ <span class="hljs-built_in">echo</span> <span class="hljs-variable">$a_file</span>
+
+$ <span class="hljs-built_in">echo</span> <span class="hljs-variable">${a}</span>_file
+foo_file
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x53D8;&#x91CF;&#x540D;<code>a_file</code>&#x4E0D;&#x4F1A;&#x6709;&#x4EFB;&#x4F55;&#x8F93;&#x51FA;&#xFF0C;&#x56E0;&#x4E3A; Bash &#x5C06;&#x5176;&#x6574;&#x4E2A;&#x89E3;&#x91CA;&#x4E3A;&#x53D8;&#x91CF;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x662F;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x3002;&#x53EA;&#x6709;&#x7528;&#x82B1;&#x62EC;&#x53F7;&#x533A;&#x5206;<code>$a</code>&#xFF0C;Bash &#x624D;&#x80FD;&#x6B63;&#x786E;&#x89E3;&#x8BFB;&#x3002;</p>
+<p>&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;&#x8BFB;&#x53D6;&#x53D8;&#x91CF;&#x7684;&#x8BED;&#x6CD5;<code>$foo</code>&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x4F5C;&#x662F;<code>${foo}</code>&#x7684;&#x7B80;&#x5199;&#x5F62;&#x5F0F;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x672C;&#x8EAB;&#x4E5F;&#x662F;&#x53D8;&#x91CF;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>${!varname}</code>&#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x8BFB;&#x53D6;&#x6700;&#x7EC8;&#x7684;&#x503C;&#x3002;</p>
+<pre><code class="lang-bash">$ myvar=USER
+$ <span class="hljs-built_in">echo</span> <span class="hljs-variable">${!myvar}</span>
+ruanyf
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x53D8;&#x91CF;<code>myvar</code>&#x7684;&#x503C;&#x662F;<code>USER</code>&#xFF0C;<code>${!myvar}</code>&#x7684;&#x5199;&#x6CD5;&#x5C06;&#x5176;&#x5C55;&#x5F00;&#x6210;&#x6700;&#x7EC8;&#x7684;&#x503C;&#x3002;</p>
+<h2 id="&#x5220;&#x9664;&#x53D8;&#x91CF;">&#x5220;&#x9664;&#x53D8;&#x91CF;</h2>
+<p><code>unset</code>&#x547D;&#x4EE4;&#x7528;&#x6765;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x3002;</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">unset</span> NAME
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x4E0D;&#x662F;&#x5F88;&#x6709;&#x7528;&#x3002;&#x56E0;&#x4E3A;&#x4E0D;&#x5B58;&#x5728;&#x7684; Bash &#x53D8;&#x91CF;&#x4E00;&#x5F8B;&#x7B49;&#x4E8E;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6240;&#x4EE5;&#x5373;&#x4F7F;<code>unset</code>&#x547D;&#x4EE4;&#x5220;&#x9664;&#x4E86;&#x53D8;&#x91CF;&#xFF0C;&#x8FD8;&#x662F;&#x53EF;&#x4EE5;&#x8BFB;&#x53D6;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x503C;&#x4E3A;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#xFF0C;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5C06;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x8BBE;&#x6210;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<pre><code class="lang-bash">$ foo=<span class="hljs-string">&apos;&apos;</span>
+$ foo=
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4E24;&#x79CD;&#x5199;&#x6CD5;&#xFF0C;&#x90FD;&#x662F;&#x5220;&#x9664;&#x4E86;&#x53D8;&#x91CF;<code>foo</code>&#x3002;&#x7531;&#x4E8E;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x503C;&#x9ED8;&#x8BA4;&#x4E3A;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6240;&#x4EE5;&#x540E;&#x4E00;&#x79CD;&#x5199;&#x6CD5;&#x53EF;&#x4EE5;&#x5728;&#x7B49;&#x53F7;&#x53F3;&#x8FB9;&#x4E0D;&#x5199;&#x4EFB;&#x4F55;&#x503C;&#x3002;</p>
+<h2 id="&#x8F93;&#x51FA;&#x53D8;&#x91CF;&#xFF0C;export-&#x547D;&#x4EE4;">&#x8F93;&#x51FA;&#x53D8;&#x91CF;&#xFF0C;export &#x547D;&#x4EE4;</h2>
+<p>&#x7528;&#x6237;&#x521B;&#x5EFA;&#x7684;&#x53D8;&#x91CF;&#x4EC5;&#x53EF;&#x7528;&#x4E8E;&#x5F53;&#x524D; Shell&#xFF0C;&#x5B50; Shell &#x9ED8;&#x8BA4;&#x8BFB;&#x53D6;&#x4E0D;&#x5230;&#x7236; Shell &#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#x3002;&#x4E3A;&#x4E86;&#x628A;&#x53D8;&#x91CF;&#x4F20;&#x9012;&#x7ED9;&#x5B50; Shell&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x7528;<code>export</code>&#x547D;&#x4EE4;&#x3002;&#x8FD9;&#x6837;&#x8F93;&#x51FA;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x5BF9;&#x4E8E;&#x5B50; Shell &#x6765;&#x8BF4;&#x5C31;&#x662F;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x3002;</p>
+<p><code>export</code>&#x547D;&#x4EE4;&#x7528;&#x6765;&#x5411;&#x5B50; Shell &#x8F93;&#x51FA;&#x53D8;&#x91CF;&#x3002;</p>
+<pre><code class="lang-bash">NAME=foo
+<span class="hljs-built_in">export</span> NAME
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x547D;&#x4EE4;&#x8F93;&#x51FA;&#x4E86;&#x53D8;&#x91CF;<code>NAME</code>&#x3002;&#x53D8;&#x91CF;&#x7684;&#x8D4B;&#x503C;&#x548C;&#x8F93;&#x51FA;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x4E00;&#x4E2A;&#x6B65;&#x9AA4;&#x4E2D;&#x5B8C;&#x6210;&#x3002;</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">export</span> NAME=value
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x540E;&#xFF0C;&#x5F53;&#x524D; Shell &#x53CA;&#x968F;&#x540E;&#x65B0;&#x5EFA;&#x7684;&#x5B50; Shell&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x8BFB;&#x53D6;&#x53D8;&#x91CF;<code>$NAME</code>&#x3002;</p>
+<p>&#x5B50; Shell &#x5982;&#x679C;&#x4FEE;&#x6539;&#x7EE7;&#x627F;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x7236; Shell&#x3002;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x8F93;&#x51FA;&#x53D8;&#x91CF; $foo</span>
+$ <span class="hljs-built_in">export</span> foo=bar
+
+<span class="hljs-comment"># &#x65B0;&#x5EFA;&#x5B50; Shell</span>
+$ bash
+
+<span class="hljs-comment"># &#x8BFB;&#x53D6; $foo</span>
+$ <span class="hljs-built_in">echo</span> <span class="hljs-variable">$foo</span>
+bar
+
+<span class="hljs-comment"># &#x4FEE;&#x6539;&#x7EE7;&#x627F;&#x7684;&#x53D8;&#x91CF;</span>
+$ foo=baz
+
+<span class="hljs-comment"># &#x9000;&#x51FA;&#x5B50; Shell</span>
+$ <span class="hljs-built_in">exit</span>
+
+<span class="hljs-comment"># &#x8BFB;&#x53D6; $foo</span>
+$ <span class="hljs-built_in">echo</span> <span class="hljs-variable">$foo</span>
+bar
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x5B50; Shell &#x4FEE;&#x6539;&#x4E86;&#x7EE7;&#x627F;&#x7684;&#x53D8;&#x91CF;<code>$foo</code>&#xFF0C;&#x5BF9;&#x7236; Shell &#x6CA1;&#x6709;&#x5F71;&#x54CD;&#x3002;</p>
+<h2 id="&#x7279;&#x6B8A;&#x53D8;&#x91CF;">&#x7279;&#x6B8A;&#x53D8;&#x91CF;</h2>
+<p>Bash &#x63D0;&#x4F9B;&#x4E00;&#x4E9B;&#x7279;&#x6B8A;&#x53D8;&#x91CF;&#x3002;&#x8FD9;&#x4E9B;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x7531; Shell &#x63D0;&#x4F9B;&#xFF0C;&#x7528;&#x6237;&#x4E0D;&#x80FD;&#x8FDB;&#x884C;&#x8D4B;&#x503C;&#x3002;</p>
+<p>&#xFF08;1&#xFF09;<code>$?</code></p>
+<p><code>$?</code>&#x4E3A;&#x4E0A;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x7684;&#x9000;&#x51FA;&#x7801;&#xFF0C;&#x7528;&#x6765;&#x5224;&#x65AD;&#x4E0A;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x662F;&#x5426;&#x6267;&#x884C;&#x6210;&#x529F;&#x3002;&#x8FD4;&#x56DE;&#x503C;&#x662F;<code>0</code>&#xFF0C;&#x8868;&#x793A;&#x4E0A;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x6210;&#x529F;&#xFF1B;&#x5982;&#x679C;&#x662F;&#x975E;&#x96F6;&#xFF0C;&#x4E0A;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x5931;&#x8D25;&#x3002;</p>
+<pre><code class="lang-bash">$ ls doesnotexist
+ls: doesnotexist: No such file or directory
+
+$ <span class="hljs-built_in">echo</span> $?
+1
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;<code>ls</code>&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x4E00;&#x4E2A;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5BFC;&#x81F4;&#x62A5;&#x9519;&#x3002;<code>$?</code>&#x4E3A;1&#xFF0C;&#x8868;&#x793A;&#x4E0A;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x5931;&#x8D25;&#x3002;</p>
+<p>&#xFF08;2&#xFF09;<code>$$</code></p>
+<p><code>$$</code>&#x4E3A;&#x5F53;&#x524D; Shell &#x7684;&#x8FDB;&#x7A0B; ID&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">echo</span> $$
+10662
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x7279;&#x6B8A;&#x53D8;&#x91CF;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x547D;&#x540D;&#x4E34;&#x65F6;&#x6587;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-bash">LOGFILE=/tmp/output_log.$$
+</code></pre>
+<p>&#xFF08;3&#xFF09;<code>$_</code></p>
+<p><code>$_</code>&#x4E3A;&#x4E0A;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x3002;</p>
+<pre><code class="lang-bash">$ grep dictionary /usr/share/dict/words
+dictionary
+
+$ <span class="hljs-built_in">echo</span> <span class="hljs-variable">$_</span>
+/usr/share/dict/words
+</code></pre>
+<p>&#xFF08;4&#xFF09;<code>$!</code></p>
+<p><code>$!</code>&#x4E3A;&#x6700;&#x8FD1;&#x4E00;&#x4E2A;&#x540E;&#x53F0;&#x6267;&#x884C;&#x7684;&#x5F02;&#x6B65;&#x547D;&#x4EE4;&#x7684;&#x8FDB;&#x7A0B; ID&#x3002;</p>
+<pre><code class="lang-bash">$ firefox &amp;
+[1] 11064
+
+$ <span class="hljs-built_in">echo</span> $!
+11064
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;<code>firefox</code>&#x662F;&#x540E;&#x53F0;&#x8FD0;&#x884C;&#x7684;&#x547D;&#x4EE4;&#xFF0C;<code>$!</code>&#x8FD4;&#x56DE;&#x8BE5;&#x547D;&#x4EE4;&#x7684;&#x8FDB;&#x7A0B; ID&#x3002;</p>
+<p>&#xFF08;5&#xFF09;<code>$0</code></p>
+<p><code>$0</code>&#x4E3A;&#x5F53;&#x524D; Shell &#x7684;&#x540D;&#x79F0;&#xFF08;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x76F4;&#x63A5;&#x6267;&#x884C;&#x65F6;&#xFF09;&#x6216;&#x8005;&#x811A;&#x672C;&#x540D;&#xFF08;&#x5728;&#x811A;&#x672C;&#x4E2D;&#x6267;&#x884C;&#x65F6;&#xFF09;&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">echo</span> <span class="hljs-variable">$0</span>
+bash
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;<code>$0</code>&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x8FD0;&#x884C;&#x7684;&#x662F; Bash&#x3002;</p>
+<p>&#xFF08;6&#xFF09;<code>$-</code></p>
+<p><code>$-</code>&#x4E3A;&#x5F53;&#x524D; Shell &#x7684;&#x542F;&#x52A8;&#x53C2;&#x6570;&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">echo</span> $-
+himBHs
+</code></pre>
+<p>&#xFF08;7&#xFF09;<code>$@</code>&#x548C;<code>$#</code></p>
+<p><code>$@</code>&#x548C;<code>$#</code>&#x8868;&#x793A;&#x811A;&#x672C;&#x7684;&#x53C2;&#x6570;&#x6570;&#x91CF;&#xFF0C;&#x53C2;&#x89C1;&#x811A;&#x672C;&#x4E00;&#x7AE0;&#x3002;</p>
+<h2 id="&#x53D8;&#x91CF;&#x7684;&#x9ED8;&#x8BA4;&#x503C;">&#x53D8;&#x91CF;&#x7684;&#x9ED8;&#x8BA4;&#x503C;</h2>
+<p>Bash &#x63D0;&#x4F9B;&#x56DB;&#x4E2A;&#x7279;&#x6B8A;&#x8BED;&#x6CD5;&#xFF0C;&#x8DDF;&#x53D8;&#x91CF;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x6709;&#x5173;&#xFF0C;&#x76EE;&#x7684;&#x662F;&#x4FDD;&#x8BC1;&#x53D8;&#x91CF;&#x4E0D;&#x4E3A;&#x7A7A;&#x3002;</p>
+<pre><code class="lang-bash"><span class="hljs-variable">${varname:-word}</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x8BED;&#x6CD5;&#x7684;&#x542B;&#x4E49;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x53D8;&#x91CF;<code>varname</code>&#x5B58;&#x5728;&#x4E14;&#x4E0D;&#x4E3A;&#x7A7A;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x5B83;&#x7684;&#x503C;&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;<code>word</code>&#x3002;&#x5B83;&#x7684;&#x76EE;&#x7684;&#x662F;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x6BD4;&#x5982;<code>${count:-0}</code>&#x8868;&#x793A;&#x53D8;&#x91CF;<code>count</code>&#x4E0D;&#x5B58;&#x5728;&#x65F6;&#x8FD4;&#x56DE;<code>0</code>&#x3002;</p>
+<pre><code class="lang-bash"><span class="hljs-variable">${varname:=word}</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x8BED;&#x6CD5;&#x7684;&#x542B;&#x4E49;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x53D8;&#x91CF;<code>varname</code>&#x5B58;&#x5728;&#x4E14;&#x4E0D;&#x4E3A;&#x7A7A;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x5B83;&#x7684;&#x503C;&#xFF0C;&#x5426;&#x5219;&#x5C06;&#x5B83;&#x8BBE;&#x4E3A;<code>word</code>&#xFF0C;&#x5E76;&#x4E14;&#x8FD4;&#x56DE;<code>word</code>&#x3002;&#x5B83;&#x7684;&#x76EE;&#x7684;&#x662F;&#x8BBE;&#x7F6E;&#x53D8;&#x91CF;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x6BD4;&#x5982;<code>${count:=0}</code>&#x8868;&#x793A;&#x53D8;&#x91CF;<code>count</code>&#x4E0D;&#x5B58;&#x5728;&#x65F6;&#x8FD4;&#x56DE;<code>0</code>&#xFF0C;&#x4E14;&#x5C06;<code>count</code>&#x8BBE;&#x4E3A;<code>0</code>&#x3002;</p>
+<pre><code class="lang-bash"><span class="hljs-variable">${varname:+word}</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x8BED;&#x6CD5;&#x7684;&#x542B;&#x4E49;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x53D8;&#x91CF;&#x540D;&#x5B58;&#x5728;&#x4E14;&#x4E0D;&#x4E3A;&#x7A7A;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;<code>word</code>&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;&#x7A7A;&#x503C;&#x3002;&#x5B83;&#x7684;&#x76EE;&#x7684;&#x662F;&#x6D4B;&#x8BD5;&#x53D8;&#x91CF;&#x662F;&#x5426;&#x5B58;&#x5728;&#xFF0C;&#x6BD4;&#x5982;<code>${count:+1}</code>&#x8868;&#x793A;&#x53D8;&#x91CF;<code>count</code>&#x5B58;&#x5728;&#x65F6;&#x8FD4;&#x56DE;<code>1</code>&#xFF08;&#x8868;&#x793A;<code>true</code>&#xFF09;&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;&#x7A7A;&#x503C;&#x3002;</p>
+<pre><code class="lang-bash"><span class="hljs-variable">${varname:?message}</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x8BED;&#x6CD5;&#x7684;&#x542B;&#x4E49;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x53D8;&#x91CF;<code>varname</code>&#x5B58;&#x5728;&#x4E14;&#x4E0D;&#x4E3A;&#x7A7A;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x5B83;&#x7684;&#x503C;&#xFF0C;&#x5426;&#x5219;&#x6253;&#x5370;&#x51FA;<code>varname: message</code>&#xFF0C;&#x5E76;&#x4E2D;&#x65AD;&#x811A;&#x672C;&#x7684;&#x6267;&#x884C;&#x3002;&#x5982;&#x679C;&#x7701;&#x7565;&#x4E86;<code>message</code>&#xFF0C;&#x5219;&#x8F93;&#x51FA;&#x9ED8;&#x8BA4;&#x7684;&#x4FE1;&#x606F;&#x201C;parameter null or not set.&#x201D;&#x3002;&#x5B83;&#x7684;&#x76EE;&#x7684;&#x662F;&#x9632;&#x6B62;&#x53D8;&#x91CF;&#x672A;&#x5B9A;&#x4E49;&#xFF0C;&#x6BD4;&#x5982;<code>${count:?&quot;undefined!&quot;}</code>&#x8868;&#x793A;&#x53D8;&#x91CF;<code>count</code>&#x672A;&#x5B9A;&#x4E49;&#x65F6;&#x5C31;&#x4E2D;&#x65AD;&#x6267;&#x884C;&#xFF0C;&#x629B;&#x51FA;&#x9519;&#x8BEF;&#xFF0C;&#x8FD4;&#x56DE;&#x7ED9;&#x5B9A;&#x7684;&#x62A5;&#x9519;&#x4FE1;&#x606F;<code>undefined!</code>&#x3002;</p>
+<p>&#x4E0A;&#x9762;&#x56DB;&#x79CD;&#x8BED;&#x6CD5;&#x5982;&#x679C;&#x7528;&#x5728;&#x811A;&#x672C;&#x4E2D;&#xFF0C;&#x53D8;&#x91CF;&#x540D;&#x7684;&#x90E8;&#x5206;&#x53EF;&#x4EE5;&#x7528;&#x5230;&#x6570;&#x5B57;<code>1</code>&#x5230;<code>9</code>&#xFF0C;&#x8868;&#x793A;&#x811A;&#x672C;&#x7684;&#x53C2;&#x6570;&#x3002;</p>
+<pre><code class="lang-bash">filename=<span class="hljs-variable">${1:?&quot;filename missing.&quot;}</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x51FA;&#x73B0;&#x5728;&#x811A;&#x672C;&#x4E2D;&#xFF0C;<code>1</code>&#x8868;&#x793A;&#x811A;&#x672C;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x3002;&#x5982;&#x679C;&#x8BE5;&#x53C2;&#x6570;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5C31;&#x9000;&#x51FA;&#x811A;&#x672C;&#x5E76;&#x62A5;&#x9519;&#x3002;</p>
+<h2 id="declare-&#x547D;&#x4EE4;">declare &#x547D;&#x4EE4;</h2>
+<p><code>declare</code>&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x58F0;&#x660E;&#x4E00;&#x4E9B;&#x7279;&#x6B8A;&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x4E3A;&#x53D8;&#x91CF;&#x8BBE;&#x7F6E;&#x4E00;&#x4E9B;&#x9650;&#x5236;&#xFF0C;&#x6BD4;&#x5982;&#x58F0;&#x660E;&#x53EA;&#x8BFB;&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#x548C;&#x6574;&#x6570;&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#x3002;</p>
+<p>&#x5B83;&#x7684;&#x8BED;&#x6CD5;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#x3002;</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">declare</span> OPTION VARIABLE=value
+</code></pre>
+<p><code>declare</code>&#x547D;&#x4EE4;&#x7684;&#x4E3B;&#x8981;&#x53C2;&#x6570;&#xFF08;OPTION&#xFF09;&#x5982;&#x4E0B;&#x3002;</p>
+<ul>
+<li><code>-a</code>&#xFF1A;&#x58F0;&#x660E;&#x6570;&#x7EC4;&#x53D8;&#x91CF;&#x3002;</li>
+<li><code>-f</code>&#xFF1A;&#x8F93;&#x51FA;&#x6240;&#x6709;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x3002;</li>
+<li><code>-F</code>&#xFF1A;&#x8F93;&#x51FA;&#x6240;&#x6709;&#x51FD;&#x6570;&#x540D;&#x3002;</li>
+<li><code>-i</code>&#xFF1A;&#x58F0;&#x660E;&#x6574;&#x6570;&#x53D8;&#x91CF;&#x3002;</li>
+<li><code>-l</code>&#xFF1A;&#x58F0;&#x660E;&#x53D8;&#x91CF;&#x4E3A;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#x3002;</li>
+<li><code>-p</code>&#xFF1A;&#x67E5;&#x770B;&#x53D8;&#x91CF;&#x4FE1;&#x606F;&#x3002;</li>
+<li><code>-r</code>&#xFF1A;&#x58F0;&#x660E;&#x53EA;&#x8BFB;&#x53D8;&#x91CF;&#x3002;</li>
+<li><code>-u</code>&#xFF1A;&#x58F0;&#x660E;&#x53D8;&#x91CF;&#x4E3A;&#x5927;&#x5199;&#x5B57;&#x6BCD;&#x3002;</li>
+<li><code>-x</code>&#xFF1A;&#x8BE5;&#x53D8;&#x91CF;&#x8F93;&#x51FA;&#x4E3A;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x3002;</li>
+</ul>
+<p><code>declare</code>&#x547D;&#x4EE4;&#x5982;&#x679C;&#x7528;&#x5728;&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#x53EA;&#x5728;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x6709;&#x6548;&#xFF0C;&#x7B49;&#x540C;&#x4E8E;<code>local</code>&#x547D;&#x4EE4;&#x3002;</p>
+<p>&#x4E0D;&#x5E26;&#x4EFB;&#x4F55;&#x53C2;&#x6570;&#x65F6;&#xFF0C;<code>declare</code>&#x547D;&#x4EE4;&#x8F93;&#x51FA;&#x5F53;&#x524D;&#x73AF;&#x5883;&#x7684;&#x6240;&#x6709;&#x53D8;&#x91CF;&#xFF0C;&#x5305;&#x62EC;&#x51FD;&#x6570;&#x5728;&#x5185;&#xFF0C;&#x7B49;&#x540C;&#x4E8E;&#x4E0D;&#x5E26;&#x6709;&#x4EFB;&#x4F55;&#x53C2;&#x6570;&#x7684;<code>set</code>&#x547D;&#x4EE4;&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">declare</span>
+</code></pre>
+<p><strong>&#xFF08;1&#xFF09;<code>-i</code>&#x53C2;&#x6570;</strong></p>
+<p><code>-i</code>&#x53C2;&#x6570;&#x58F0;&#x660E;&#x6574;&#x6570;&#x53D8;&#x91CF;&#x4EE5;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8FDB;&#x884C;&#x6570;&#x5B66;&#x8FD0;&#x7B97;&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">declare</span> -i val1=12 val2=5
+$ <span class="hljs-built_in">declare</span> -i result
+$ result=val1*val2
+$ <span class="hljs-built_in">echo</span> <span class="hljs-variable">$result</span>
+60
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x53D8;&#x91CF;<code>result</code>&#x4E0D;&#x58F0;&#x660E;&#x4E3A;&#x6574;&#x6570;&#xFF0C;<code>val1*val2</code>&#x4F1A;&#x88AB;&#x5F53;&#x4F5C;&#x5B57;&#x9762;&#x91CF;&#xFF0C;&#x4E0D;&#x4F1A;&#x8FDB;&#x884C;&#x6574;&#x6570;&#x8FD0;&#x7B97;&#x3002;&#x53E6;&#x5916;&#xFF0C;<code>val1</code>&#x548C;<code>val2</code>&#x5176;&#x5B9E;&#x4E0D;&#x9700;&#x8981;&#x58F0;&#x660E;&#x4E3A;&#x6574;&#x6570;&#xFF0C;&#x56E0;&#x4E3A;&#x53EA;&#x8981;<code>result</code>&#x58F0;&#x660E;&#x4E3A;&#x6574;&#x6570;&#xFF0C;&#x5B83;&#x7684;&#x8D4B;&#x503C;&#x5C31;&#x4F1A;&#x81EA;&#x52A8;&#x89E3;&#x91CA;&#x4E3A;&#x6574;&#x6570;&#x8FD0;&#x7B97;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x4E3A;&#x6574;&#x6570;&#x4EE5;&#x540E;&#xFF0C;&#x4F9D;&#x7136;&#x53EF;&#x4EE5;&#x88AB;&#x6539;&#x5199;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">declare</span> -i var=12
+$ var=foo
+$ <span class="hljs-built_in">echo</span> <span class="hljs-variable">$var</span>
+0
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x53D8;&#x91CF;<code>var</code>&#x58F0;&#x660E;&#x4E3A;&#x6574;&#x6570;&#xFF0C;&#x8986;&#x76D6;&#x4EE5;&#x540E;&#xFF0C;Bash &#x4E0D;&#x4F1A;&#x62A5;&#x9519;&#xFF0C;&#x4F46;&#x4F1A;&#x8D4B;&#x4EE5;&#x4E0D;&#x786E;&#x5B9A;&#x7684;&#x503C;&#xFF0C;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#x53EF;&#x80FD;&#x8F93;&#x51FA;0&#xFF0C;&#x4E5F;&#x53EF;&#x80FD;&#x8F93;&#x51FA;&#x7684;&#x662F;3&#x3002;</p>
+<p><strong>&#xFF08;2&#xFF09;<code>-x</code>&#x53C2;&#x6570;</strong></p>
+<p><code>-x</code>&#x53C2;&#x6570;&#x7B49;&#x540C;&#x4E8E;<code>export</code>&#x547D;&#x4EE4;&#xFF0C;&#x53EF;&#x4EE5;&#x8F93;&#x51FA;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x4E3A;&#x5B50; Shell &#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">declare</span> -x foo
+<span class="hljs-comment"># &#x7B49;&#x540C;&#x4E8E;</span>
+$ <span class="hljs-built_in">export</span> foo
+</code></pre>
+<p><strong>&#xFF08;3&#xFF09;<code>-r</code>&#x53C2;&#x6570;</strong></p>
+<p><code>-r</code>&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x58F0;&#x660E;&#x53EA;&#x8BFB;&#x53D8;&#x91CF;&#xFF0C;&#x65E0;&#x6CD5;&#x6539;&#x53D8;&#x53D8;&#x91CF;&#x503C;&#xFF0C;&#x4E5F;&#x4E0D;&#x80FD;<code>unset</code>&#x53D8;&#x91CF;&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">declare</span> -r bar=1
+
+$ bar=2
+bash: bar&#xFF1A;&#x53EA;&#x8BFB;&#x53D8;&#x91CF;
+$ <span class="hljs-built_in">echo</span> $?
+1
+
+$ <span class="hljs-built_in">unset</span> bar
+bash: bar&#xFF1A;&#x53EA;&#x8BFB;&#x53D8;&#x91CF;
+$ <span class="hljs-built_in">echo</span> $?
+1
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x540E;&#x4E24;&#x4E2A;&#x8D4B;&#x503C;&#x8BED;&#x53E5;&#x90FD;&#x4F1A;&#x62A5;&#x9519;&#xFF0C;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x5931;&#x8D25;&#x3002;</p>
+<p><strong>&#xFF08;4&#xFF09;<code>-u</code>&#x53C2;&#x6570;</strong></p>
+<p><code>-u</code>&#x53C2;&#x6570;&#x58F0;&#x660E;&#x53D8;&#x91CF;&#x4E3A;&#x5927;&#x5199;&#x5B57;&#x6BCD;&#xFF0C;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x628A;&#x53D8;&#x91CF;&#x503C;&#x8F6C;&#x6210;&#x5927;&#x5199;&#x5B57;&#x6BCD;&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">declare</span> -u foo
+$ foo=upper
+$ <span class="hljs-built_in">echo</span> <span class="hljs-variable">$foo</span>
+UPPER
+</code></pre>
+<p><strong>&#xFF08;5&#xFF09;<code>-l</code>&#x53C2;&#x6570;</strong></p>
+<p><code>-l</code>&#x53C2;&#x6570;&#x58F0;&#x660E;&#x53D8;&#x91CF;&#x4E3A;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#xFF0C;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x628A;&#x53D8;&#x91CF;&#x503C;&#x8F6C;&#x6210;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">declare</span> <span class="hljs-_">-l</span> bar
+$ bar=LOWER
+$ <span class="hljs-built_in">echo</span> <span class="hljs-variable">$bar</span>
+lower
+</code></pre>
+<p><strong>&#xFF08;6&#xFF09;<code>-p</code>&#x53C2;&#x6570;</strong></p>
+<p><code>-p</code>&#x53C2;&#x6570;&#x8F93;&#x51FA;&#x53D8;&#x91CF;&#x4FE1;&#x606F;&#x3002;</p>
+<pre><code class="lang-bash">$ foo=hello
+$ <span class="hljs-built_in">declare</span> -p foo
+<span class="hljs-built_in">declare</span> -- foo=<span class="hljs-string">&quot;hello&quot;</span>
+$ <span class="hljs-built_in">declare</span> -p bar
+bar&#xFF1A;&#x672A;&#x627E;&#x5230;
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;<code>declare -p</code>&#x53EF;&#x4EE5;&#x8F93;&#x51FA;&#x5DF2;&#x5B9A;&#x4E49;&#x53D8;&#x91CF;&#x7684;&#x503C;&#xFF0C;&#x5BF9;&#x4E8E;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x4F1A;&#x63D0;&#x793A;&#x627E;&#x4E0D;&#x5230;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4E0D;&#x63D0;&#x4F9B;&#x53D8;&#x91CF;&#x540D;&#xFF0C;<code>declare -p</code>&#x8F93;&#x51FA;&#x6240;&#x6709;&#x53D8;&#x91CF;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">declare</span> -p
+</code></pre>
+<p><strong>&#xFF08;7&#xFF09;<code>-f</code>&#x53C2;&#x6570;</strong></p>
+<p><code>-f</code>&#x53C2;&#x6570;&#x8F93;&#x51FA;&#x5F53;&#x524D;&#x73AF;&#x5883;&#x7684;&#x6240;&#x6709;&#x51FD;&#x6570;&#xFF0C;&#x5305;&#x62EC;&#x5B83;&#x7684;&#x5B9A;&#x4E49;&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">declare</span> <span class="hljs-_">-f</span>
+</code></pre>
+<p><strong>&#xFF08;8&#xFF09;<code>-F</code>&#x53C2;&#x6570;</strong></p>
+<p><code>-F</code>&#x53C2;&#x6570;&#x8F93;&#x51FA;&#x5F53;&#x524D;&#x73AF;&#x5883;&#x7684;&#x6240;&#x6709;&#x51FD;&#x6570;&#x540D;&#xFF0C;&#x4E0D;&#x5305;&#x542B;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">declare</span> -F
+</code></pre>
+<h2 id="readonly-&#x547D;&#x4EE4;">readonly &#x547D;&#x4EE4;</h2>
+<p><code>readonly</code>&#x547D;&#x4EE4;&#x7B49;&#x540C;&#x4E8E;<code>declare -r</code>&#xFF0C;&#x7528;&#x6765;&#x58F0;&#x660E;&#x53EA;&#x8BFB;&#x53D8;&#x91CF;&#xFF0C;&#x4E0D;&#x80FD;&#x6539;&#x53D8;&#x53D8;&#x91CF;&#x503C;&#xFF0C;&#x4E5F;&#x4E0D;&#x80FD;<code>unset</code>&#x53D8;&#x91CF;&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">readonly</span> foo=1
+$ foo=2
+bash: foo&#xFF1A;&#x53EA;&#x8BFB;&#x53D8;&#x91CF;
+$ <span class="hljs-built_in">echo</span> $?
+1
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x66F4;&#x6539;&#x53EA;&#x8BFB;&#x53D8;&#x91CF;<code>foo</code>&#x4F1A;&#x62A5;&#x9519;&#xFF0C;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x5931;&#x8D25;&#x3002;</p>
+<p><code>readonly</code>&#x547D;&#x4EE4;&#x6709;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#x3002;</p>
+<ul>
+<li><code>-f</code>&#xFF1A;&#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#x4E3A;&#x51FD;&#x6570;&#x540D;&#x3002;</li>
+<li><code>-p</code>&#xFF1A;&#x6253;&#x5370;&#x51FA;&#x6240;&#x6709;&#x7684;&#x53EA;&#x8BFB;&#x53D8;&#x91CF;&#x3002;</li>
+<li><code>-a</code>&#xFF1A;&#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#x4E3A;&#x6570;&#x7EC4;&#x3002;</li>
+</ul>
+<h2 id="let-&#x547D;&#x4EE4;">let &#x547D;&#x4EE4;</h2>
+<p><code>let</code>&#x547D;&#x4EE4;&#x58F0;&#x660E;&#x53D8;&#x91CF;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x6267;&#x884C;&#x7B97;&#x672F;&#x8868;&#x8FBE;&#x5F0F;&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">let</span> foo=1+2
+$ <span class="hljs-built_in">echo</span> <span class="hljs-variable">$foo</span>
+3
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;<code>let</code>&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8BA1;&#x7B97;<code>1 + 2</code>&#x3002;</p>
+<p><code>let</code>&#x547D;&#x4EE4;&#x7684;&#x53C2;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#x5982;&#x679C;&#x5305;&#x542B;&#x7A7A;&#x683C;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5F15;&#x53F7;&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">let</span> <span class="hljs-string">&quot;foo = 1 + 2&quot;</span>
+</code></pre>
+<p><code>let</code>&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x5BF9;&#x591A;&#x4E2A;&#x53D8;&#x91CF;&#x8D4B;&#x503C;&#xFF0C;&#x8D4B;&#x503C;&#x8868;&#x8FBE;&#x5F0F;&#x4E4B;&#x95F4;&#x4F7F;&#x7528;&#x7A7A;&#x683C;&#x5206;&#x9694;&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">let</span> <span class="hljs-string">&quot;v1 = 1&quot;</span> <span class="hljs-string">&quot;v2 = v1++&quot;</span>
+$ <span class="hljs-built_in">echo</span> <span class="hljs-variable">$v1</span>,<span class="hljs-variable">$v2</span>
+2,1
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;<code>let</code>&#x58F0;&#x660E;&#x4E86;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;<code>v1</code>&#x548C;<code>v2</code>&#xFF0C;&#x5176;&#x4E2D;<code>v2</code>&#x7B49;&#x4E8E;<code>v1++</code>&#xFF0C;&#x8868;&#x793A;&#x5148;&#x8FD4;&#x56DE;<code>v1</code>&#x7684;&#x503C;&#xFF0C;&#x7136;&#x540E;<code>v1</code>&#x81EA;&#x589E;&#x3002;</p>
+<p>&#x8FD9;&#x79CD;&#x8BED;&#x6CD5;&#x652F;&#x6301;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x53C2;&#x8003;&#x300A;Bash &#x7684;&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x300B;&#x4E00;&#x7AE0;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="quotation.html" class="navigation navigation-prev " aria-label="Previous page: 引号和转义">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="string.html" class="navigation navigation-next " aria-label="Next page: 字符串操作">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"变量","level":"1.6","depth":1,"next":{"title":"字符串操作","level":"1.7","depth":1,"path":"docs/string.md","ref":"docs/string.md","articles":[]},"previous":{"title":"引号和转义","level":"1.5","depth":1,"path":"docs/quotation.md","ref":"docs/quotation.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/variable.md","mtime":"2020-05-21T03:39:58.393Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-21T06:07:28.914Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
