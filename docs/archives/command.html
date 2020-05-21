@@ -1,0 +1,1379 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Shell 的命令 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="file-operation.html" />
+    
+    
+    <link rel="prev" href="async.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../intro.html">
+            
+                <a href="../intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../startup.html">
+            
+                <a href="../startup.html">
+            
+                    
+                    启动环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../prompt.html">
+            
+                <a href="../prompt.html">
+            
+                    
+                    命令提示符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../README_grammar.html">
+            
+                <a href="../../README_grammar.html">
+            
+                    
+                    bash语法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../grammar.html">
+            
+                <a href="../grammar.html">
+            
+                    
+                    基本语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../expansion.html">
+            
+                <a href="../expansion.html">
+            
+                    
+                    模式扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../quotation.html">
+            
+                <a href="../quotation.html">
+            
+                    
+                    引号和转义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../variable.html">
+            
+                <a href="../variable.html">
+            
+                    
+                    变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../string.html">
+            
+                <a href="../string.html">
+            
+                    
+                    字符串操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../arithmetic.html">
+            
+                <a href="../arithmetic.html">
+            
+                    
+                    算术运算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../readline.html">
+            
+                <a href="../readline.html">
+            
+                    
+                    行操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../stack.html">
+            
+                <a href="../stack.html">
+            
+                    
+                    目录堆栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../condition.html">
+            
+                <a href="../condition.html">
+            
+                    
+                    条件判断
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../loop.html">
+            
+                <a href="../loop.html">
+            
+                    
+                    循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../function.html">
+            
+                <a href="../function.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="../array.html">
+            
+                <a href="../array.html">
+            
+                    
+                    数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../README_commond.html">
+            
+                <a href="../../README_commond.html">
+            
+                    
+                    命令
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../script.html">
+            
+                <a href="../script.html">
+            
+                    
+                    脚本入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../debug.html">
+            
+                <a href="../debug.html">
+            
+                    
+                    脚本除错
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../mktemp.html">
+            
+                <a href="../mktemp.html">
+            
+                    
+                    mktemp 命令，trap 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../read.html">
+            
+                <a href="../read.html">
+            
+                    
+                    read 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../set.html">
+            
+                <a href="../set.html">
+            
+                    
+                    set 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="commond/awk.md">
+            
+                <span>
+            
+                    
+                    awk 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="commond/cal.md">
+            
+                <span>
+            
+                    
+                    cal 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="commond/cat.md">
+            
+                <span>
+            
+                    
+                    cat 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="commond/clear.md">
+            
+                <span>
+            
+                    
+                    clear 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="commond/cp.md">
+            
+                <span>
+            
+                    
+                    cp 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="commond/cut.md">
+            
+                <span>
+            
+                    
+                    cut 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="commond/date.md">
+            
+                <span>
+            
+                    
+                    date 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="commond/dd.md">
+            
+                <span>
+            
+                    
+                    dd 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="commond/df.md">
+            
+                <span>
+            
+                    
+                    df 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="commond/du.md">
+            
+                <span>
+            
+                    
+                    du 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="commond/egrep.md">
+            
+                <span>
+            
+                    
+                    egrep 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="commond/export.md">
+            
+                <span>
+            
+                    
+                    export 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18" data-path="commond/file.md">
+            
+                <span>
+            
+                    
+                    file 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.19" data-path="commond/find.md">
+            
+                <span>
+            
+                    
+                    find 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.20" data-path="commond/fmt.md">
+            
+                <span>
+            
+                    
+                    fmt 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.21" data-path="commond/grep.md">
+            
+                <span>
+            
+                    
+                    grep 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22" data-path="commond/gunzip.md">
+            
+                <span>
+            
+                    
+                    gunzip 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.23" data-path="commond/gacat.md">
+            
+                <span>
+            
+                    
+                    gzcat 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.24" data-path="commond/gzip.md">
+            
+                <span>
+            
+                    
+                    gzip 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.25" data-path="commond/kill.md">
+            
+                <span>
+            
+                    
+                    kill 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.26" data-path="commond/kilall.md">
+            
+                <span>
+            
+                    
+                    killall 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.27" data-path="commond/last.md">
+            
+                <span>
+            
+                    
+                    last 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.28" data-path="commond/lpq.md">
+            
+                <span>
+            
+                    
+                    lpq 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.29" data-path="commond/lpr.md">
+            
+                <span>
+            
+                    
+                    lpr 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.30" data-path="commond/ls.md">
+            
+                <span>
+            
+                    
+                    ls 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.31" data-path="commond/nl.md">
+            
+                <span>
+            
+                    
+                    nl 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.32" data-path="commond/ps.md">
+            
+                <span>
+            
+                    
+                    ps 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.33" data-path="commond/scp.md">
+            
+                <span>
+            
+                    
+                    scp 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.34" data-path="commond/sed.md">
+            
+                <span>
+            
+                    
+                    sed 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.35" data-path="commond/sort.md">
+            
+                <span>
+            
+                    
+                    sort 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.36" data-path="commond/tr.md">
+            
+                <span>
+            
+                    
+                    tr 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.37" data-path="commond/uname.md">
+            
+                <span>
+            
+                    
+                    uname 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.38" data-path="commond/uniq.md">
+            
+                <span>
+            
+                    
+                    uniq 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.39" data-path="commond/uptime.md">
+            
+                <span>
+            
+                    
+                    uptime 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.40" data-path="commond/w.md">
+            
+                <span>
+            
+                    
+                    w 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.41" data-path="commond/wc.md">
+            
+                <span>
+            
+                    
+                    wc 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.42" data-path="commond/whereis.md">
+            
+                <span>
+            
+                    
+                    whereis 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.43" data-path="commond/which.md">
+            
+                <span>
+            
+                    
+                    which 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.44" data-path="commond/who.md">
+            
+                <span>
+            
+                    
+                    who 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../README_sysapp.html">
+            
+                <a href="../../README_sysapp.html">
+            
+                    
+                    系统应用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="arithmetic.md">
+            
+                <span>
+            
+                    
+                    归档和备份
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="async.html">
+            
+                <a href="async.html">
+            
+                    
+                    异步任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.3" data-path="command.html">
+            
+                <a href="command.html">
+            
+                    
+                    Shell 的命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="file-operation.html">
+            
+                <a href="file-operation.html">
+            
+                    
+                    文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="file.html">
+            
+                <a href="file.html">
+            
+                    
+                    文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="hardware.html">
+            
+                <a href="hardware.html">
+            
+                    
+                    硬件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="host.html">
+            
+                <a href="host.html">
+            
+                    
+                    主机管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="named-pipe.html">
+            
+                <a href="named-pipe.html">
+            
+                    
+                    命名管道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="process.html">
+            
+                <a href="process.html">
+            
+                    
+                    进程管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="redirection.html">
+            
+                <a href="redirection.html">
+            
+                    
+                    重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="regex.html">
+            
+                <a href="regex.html">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="system.html">
+            
+                <a href="system.html">
+            
+                    
+                    系统信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.13" data-path="text.html">
+            
+                <a href="text.html">
+            
+                    
+                    文本处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.14" data-path="time.html">
+            
+                <a href="time.html">
+            
+                    
+                    时间管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.15" data-path="user.html">
+            
+                <a href="user.html">
+            
+                    
+                    用户管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Shell 的命令</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="shell-&#x7684;&#x547D;&#x4EE4;">Shell &#x7684;&#x547D;&#x4EE4;</h1>
+<h2 id="&#x547D;&#x4EE4;&#x7684;&#x7C7B;&#x522B;">&#x547D;&#x4EE4;&#x7684;&#x7C7B;&#x522B;</h2>
+<p>Bash&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7684;&#x547D;&#x4EE4;&#x5206;&#x6210;&#x56DB;&#x7C7B;&#x3002;</p>
+<ul>
+<li>&#x53EF;&#x6267;&#x884C;&#x7A0B;&#x5E8F;</li>
+<li>Shell &#x63D0;&#x4F9B;&#x7684;&#x547D;&#x4EE4;</li>
+<li>Shell &#x51FD;&#x6570;</li>
+<li>&#x524D;&#x4E09;&#x7C7B;&#x547D;&#x4EE4;&#x7684;&#x522B;&#x540D;</li>
+</ul>
+<h2 id="type-whatis">type, whatis</h2>
+<p><code>type</code>&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x663E;&#x793A;&#x547D;&#x4EE4;&#x7C7B;&#x578B;&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">type</span> <span class="hljs-built_in">command</span>
+</code></pre>
+<p>&#x4E0B;&#x9762;&#x662F;&#x51E0;&#x4E2A;&#x4F8B;&#x5B50;&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">type</span> <span class="hljs-built_in">type</span>
+<span class="hljs-built_in">type</span> is a shell <span class="hljs-built_in">builtin</span>
+
+$ <span class="hljs-built_in">type</span> ls
+ls is aliased to `ls --color=tty<span class="hljs-string">&apos;
+
+$ type cp
+cp is /bin/cp
+</span></code></pre>
+<p><code>whatis</code>&#x547D;&#x4EE4;&#x663E;&#x793A;&#x6307;&#x5B9A;&#x547D;&#x4EE4;&#x7684;&#x63CF;&#x8FF0;&#x3002;</p>
+<pre><code class="lang-bash">$ whatis ls
+ls (1) - list directory contents
+</code></pre>
+<h2 id="apropos">apropos</h2>
+<p><code>apropos</code>&#x547D;&#x4EE4;&#x8FD4;&#x56DE;&#x7B26;&#x5408;&#x641C;&#x7D22;&#x6761;&#x4EF6;&#x7684;&#x547D;&#x4EE4;&#x5217;&#x8868;&#x3002;</p>
+<pre><code class="lang-bash">$ apropos floppy
+create_floppy_devices (8) - udev callout to create all possible
+fdformat (8) - Low-level formats a floppy disk
+floppy (8) - format floppy disks
+gfloppy (1) - a simple floppy formatter <span class="hljs-keyword">for</span> the GNOME
+mbadblocks (1) - tests a floppy disk, and marks the bad
+mformat (1) - add an MSDOS filesystem to a low-level
+</code></pre>
+<h2 id="alias-unalias">alias, unalias</h2>
+<p><code>alias</code>&#x547D;&#x4EE4;&#x7528;&#x6765;&#x4E3A;&#x547D;&#x4EE4;&#x8D77;&#x522B;&#x540D;&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">alias</span> foo=<span class="hljs-string">&apos;cd /usr; ls; cd -&apos;</span>
+
+$ <span class="hljs-built_in">type</span> foo
+foo is aliased to `<span class="hljs-built_in">cd</span> /usr; ls ; <span class="hljs-built_in">cd</span> -<span class="hljs-string">&apos;
+</span></code></pre>
+<p>&#x4E0A;&#x9762;&#x547D;&#x4EE4;&#x6307;&#x5B9A;<code>foo</code>&#x4E3A;&#x4E09;&#x4E2A;&#x547D;&#x4EE4;&#x7684;&#x522B;&#x540D;&#x3002;&#x4EE5;&#x540E;&#xFF0C;&#x6267;&#x884C;<code>foo</code>&#x5C31;&#x76F8;&#x5F53;&#x4E8E;&#x4E00;&#x8D77;&#x6267;&#x884C;&#x8FD9;&#x4E09;&#x6761;&#x547D;&#x4EE4;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x522B;&#x540D;&#x53EA;&#x5728;&#x5F53;&#x524D;Session&#x6709;&#x6548;&#x3002;&#x5F53;&#x524D;Session&#x7ED3;&#x675F;&#x65F6;&#xFF0C;&#x8FD9;&#x4E9B;&#x522B;&#x540D;&#x5C31;&#x4F1A;&#x6D88;&#x5931;&#x3002;</p>
+<p><code>alias</code>&#x547D;&#x4EE4;&#x4E0D;&#x52A0;&#x53C2;&#x6570;&#x65F6;&#xFF0C;&#x663E;&#x793A;&#x6240;&#x6709;&#x6709;&#x6548;&#x7684;&#x522B;&#x540D;&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">alias</span>
+<span class="hljs-built_in">alias</span> l.=<span class="hljs-string">&apos;ls -d .* --color=tty&apos;</span>
+<span class="hljs-built_in">alias</span> ll=<span class="hljs-string">&apos;ls -l --color=tty&apos;</span>
+<span class="hljs-built_in">alias</span> ls=<span class="hljs-string">&apos;ls --color=tty&apos;</span>
+</code></pre>
+<p><code>unalias</code>&#x547D;&#x4EE4;&#x7528;&#x6765;&#x53D6;&#x6D88;&#x522B;&#x540D;&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">unalias</span> foo
+$ <span class="hljs-built_in">type</span> foo
+bash: <span class="hljs-built_in">type</span>: foo: not found
+</code></pre>
+<h2 id="which">which</h2>
+<p><code>which</code>&#x547D;&#x4EE4;&#x663E;&#x793A;&#x53EF;&#x6267;&#x884C;&#x7A0B;&#x5E8F;&#x7684;&#x8DEF;&#x5F84;&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">which</span> ls
+/bin/ls
+</code></pre>
+<p><code>which</code>&#x547D;&#x4EE4;&#x7528;&#x4E8E;Shell&#x5185;&#x7F6E;&#x547D;&#x4EE4;&#x65F6;&#xFF08;&#x6BD4;&#x5982;<code>cd</code>&#xFF09;&#xFF0C;&#x5C06;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x8F93;&#x51FA;&#x3002;</p>
+<h2 id="help&#xFF0C;man">help&#xFF0C;man</h2>
+<p><code>help</code>&#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x67E5;&#x770B;Shell&#x5185;&#x7F6E;&#x547D;&#x4EE4;&#x7684;&#x5E2E;&#x52A9;&#x4FE1;&#x606F;&#xFF0C;<code>man</code>&#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x67E5;&#x770B;&#x53EF;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x7684;&#x5E2E;&#x52A9;&#x4FE1;&#x606F;&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">help</span> <span class="hljs-built_in">cd</span>
+$ man ls
+</code></pre>
+<p><code>man</code>&#x91CC;&#x9762;&#x7684;&#x6587;&#x6863;&#x4E00;&#x5171;&#x6709;8&#x7C7B;&#xFF0C;&#x5982;&#x679C;&#x540C;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#xFF0C;&#x5339;&#x914D;&#x591A;&#x4E2A;&#x6587;&#x6863;&#xFF0C;<code>man</code>&#x547D;&#x4EE4;&#x603B;&#x662F;&#x8FD4;&#x56DE;&#x7B2C;&#x4E00;&#x4E2A;&#x5339;&#x914D;&#x3002;&#x5982;&#x679C;&#x60F3;&#x770B;&#x6307;&#x5B9A;&#x7C7B;&#x578B;&#x7684;&#x6587;&#x6863;&#xFF0C;&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x91C7;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x5F62;&#x5F0F;&#x3002;</p>
+<pre><code class="lang-bash">$ man 5 passwd
+</code></pre>
+<h2 id="script">script</h2>
+<p><code>script</code>&#x547D;&#x4EE4;&#x4F1A;&#x5C06;&#x8F93;&#x5165;&#x7684;&#x547D;&#x4EE4;&#x548C;&#x5B83;&#x7684;&#x8F93;&#x51FA;&#xFF0C;&#x90FD;&#x4FDD;&#x5B58;&#x8FDB;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-bash">$ script [file]
+</code></pre>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x5219;&#x6240;&#x6709;&#x7ED3;&#x679C;&#x4F1A;&#x4FDD;&#x5B58;&#x8FDB;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E0B;<code>typescript</code>&#x6587;&#x4EF6;&#x3002;&#x7ED3;&#x675F;&#x5F55;&#x5236;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;&#x6309;&#x4E0B;<code>Ctrl + d</code>&#x3002;</p>
+<h2 id="export">export</h2>
+<p><code>export</code>&#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x5C06;&#x5F53;&#x524D;&#x8FDB;&#x7A0B;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x8F93;&#x51FA;&#x5230;&#x6240;&#x6709;&#x5B50;&#x8FDB;&#x7A0B;&#x3002;</p>
+<h2 id="&#x547D;&#x4EE4;&#x7684;&#x8FDE;&#x7EED;&#x6267;&#x884C;">&#x547D;&#x4EE4;&#x7684;&#x8FDE;&#x7EED;&#x6267;&#x884C;</h2>
+<p>&#x591A;&#x4E2A;&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x5199;&#x5728;&#x4E00;&#x8D77;&#x3002;</p>
+<p>Bash &#x63D0;&#x4F9B;&#x4E09;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x5B9A;&#x4E49;&#x5B83;&#x4EEC;&#x5982;&#x4F55;&#x6267;&#x884C;&#x3002;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x7B2C;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x5B8C;&#xFF0C;&#x6267;&#x884C;&#x7B2C;&#x4E8C;&#x4E2A;&#x547D;&#x4EE4;</span>
+<span class="hljs-built_in">command</span>1; <span class="hljs-built_in">command</span>2
+
+<span class="hljs-comment"># &#x53EA;&#x6709;&#x7B2C;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x6210;&#x529F;&#x6267;&#x884C;&#x5B8C;&#xFF08;&#x9000;&#x51FA;&#x7801;0&#xFF09;&#xFF0C;&#x624D;&#x4F1A;&#x6267;&#x884C;&#x7B2C;&#x4E8C;&#x4E2A;&#x547D;&#x4EE4;</span>
+<span class="hljs-built_in">command</span>1 &amp;&amp; <span class="hljs-built_in">command</span>2
+
+<span class="hljs-comment"># &#x53EA;&#x6709;&#x7B2C;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x5931;&#x8D25;&#xFF08;&#x9000;&#x51FA;&#x7801;&#x975E;0&#xFF09;&#xFF0C;&#x624D;&#x4F1A;&#x6267;&#x884C;&#x7B2C;&#x4E8C;&#x4E2A;&#x547D;&#x4EE4;</span>
+<span class="hljs-built_in">command</span>1 || <span class="hljs-built_in">command</span>2
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4E09;&#x79CD;&#x6267;&#x884C;&#x65B9;&#x6CD5;&#x7684;&#x9000;&#x51FA;&#x7801;&#xFF0C;&#x90FD;&#x662F;&#x6700;&#x540E;&#x4E00;&#x6761;&#x6267;&#x884C;&#x7684;&#x547D;&#x4EE4;&#x7684;&#x9000;&#x51FA;&#x7801;&#x3002;</p>
+<p>bash &#x5141;&#x8BB8;&#x628A;&#x547D;&#x4EE4;&#x7EC4;&#x5408;&#x5728;&#x4E00;&#x8D77;&#x3002;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x5B8C;&#x6210;&#xFF1B;&#x8981;&#x4E48;&#x7528;&#x4E00;&#x4E2A; group &#x547D;&#x4EE4;&#xFF0C;&#x8981;&#x4E48;&#x7528;&#x4E00;&#x4E2A;&#x5B50; shell&#x3002; &#x8FD9;&#x91CC;&#x662F;&#x6BCF;&#x79CD;&#x65B9;&#x5F0F;&#x7684;&#x8BED;&#x6CD5;&#x793A;&#x4F8B;&#xFF1A;</p>
+<p>&#x7EC4;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code class="lang-bash">{ <span class="hljs-built_in">command</span>1; <span class="hljs-built_in">command</span>2; [<span class="hljs-built_in">command</span>3; ...] }
+</code></pre>
+<p>&#x5B50; shell</p>
+<pre><code class="lang-bash">(<span class="hljs-built_in">command</span>1; <span class="hljs-built_in">command</span>2; [<span class="hljs-built_in">command</span>3;...])
+</code></pre>
+<p>&#x8FD9;&#x4E24;&#x79CD;&#x5F62;&#x5F0F;&#x7684;&#x4E0D;&#x540C;&#x4E4B;&#x5904;&#x5728;&#x4E8E;&#xFF0C;&#x7EC4;&#x547D;&#x4EE4;&#x7528;&#x82B1;&#x62EC;&#x53F7;&#x628A;&#x5B83;&#x7684;&#x547D;&#x4EE4;&#x5305;&#x88F9;&#x8D77;&#x6765;&#xFF0C;&#x800C;&#x5B50; shell &#x7528;&#x62EC;&#x53F7;&#x3002;&#x503C;&#x5F97;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x9274;&#x4E8E; bash &#x5B9E;&#x73B0;&#x7EC4;&#x547D;&#x4EE4;&#x7684;&#x65B9;&#x5F0F;&#xFF0C; &#x82B1;&#x62EC;&#x53F7;&#x4E0E;&#x547D;&#x4EE4;&#x4E4B;&#x95F4;&#x5FC5;&#x987B;&#x6709;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;&#xFF0C;&#x5E76;&#x4E14;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x5FC5;&#x987B;&#x7528;&#x4E00;&#x4E2A;&#x5206;&#x53F7;&#x6216;&#x8005;&#x4E00;&#x4E2A;&#x6362;&#x884C;&#x7B26;&#x7EC8;&#x6B62;&#x3002;</p>
+<p>&#x90A3;&#x4E48;&#x7EC4;&#x547D;&#x4EE4;&#x548C;&#x5B50; shell &#x547D;&#x4EE4;&#x5BF9;&#x4EC0;&#x4E48;&#x6709;&#x597D;&#x5904;&#x5462;&#xFF1F; &#x5B83;&#x4EEC;&#x90FD;&#x662F;&#x7528;&#x6765;&#x7BA1;&#x7406;&#x91CD;&#x5B9A;&#x5411;&#x7684;&#x3002;</p>
+<pre><code class="lang-bash">{ ls <span class="hljs-_">-l</span>; <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Listing of foo.txt&quot;</span>; cat foo.txt; } &gt; output.txt
+</code></pre>
+<p>&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x5B50; shell &#x662F;&#x76F8;&#x4F3C;&#x7684;&#x3002;</p>
+<pre><code class="lang-bash">(ls <span class="hljs-_">-l</span>; <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Listing of foo.txt&quot;</span>; cat foo.txt) &gt; output.txt
+</code></pre>
+<p>&#x7EC4;&#x547D;&#x4EE4;&#x548C;&#x5B50; shell &#x771F;&#x6B63;&#x95EA;&#x5149;&#x7684;&#x5730;&#x65B9;&#x662F;&#x4E0E;&#x7BA1;&#x9053;&#x7EBF;&#x76F8;&#x7ED3;&#x5408;&#x3002; &#x5F53;&#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x7BA1;&#x9053;&#x7EBF;&#x547D;&#x4EE4;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x901A;&#x5E38;&#x628A;&#x51E0;&#x4E2A;&#x547D;&#x4EE4;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x5408;&#x5E76;&#x6210;&#x4E00;&#x4E2A;&#x6D41;&#x662F;&#x5F88;&#x6709;&#x7528;&#x7684;&#x3002; &#x7EC4;&#x547D;&#x4EE4;&#x548C;&#x5B50; shell &#x4F7F;&#x8FD9;&#x79CD;&#x64CD;&#x4F5C;&#x53D8;&#x5F97;&#x5F88;&#x7B80;&#x5355;&#x3002;</p>
+<pre><code class="lang-bash">{ ls <span class="hljs-_">-l</span>; <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Listing of foo.txt&quot;</span>; cat foo.txt; } | lpr
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x628A;&#x6211;&#x4EEC;&#x7684;&#x4E09;&#x4E2A;&#x547D;&#x4EE4;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x5408;&#x5E76;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x5E76;&#x628A;&#x5B83;&#x4EEC;&#x7528;&#x7BA1;&#x9053;&#x8F93;&#x9001;&#x7ED9;&#x547D;&#x4EE4; lpr &#x7684;&#x8F93;&#x5165;&#xFF0C;&#x4EE5;&#x4FBF;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x6253;&#x5370;&#x62A5;&#x544A;&#x3002;</p>
+<p>&#x867D;&#x7136;&#x7EC4;&#x547D;&#x4EE4;&#x548C;&#x5B50; shell &#x770B;&#x8D77;&#x6765;&#x76F8;&#x4F3C;&#xFF0C;&#x5E76;&#x4E14;&#x5B83;&#x4EEC;&#x90FD;&#x80FD;&#x7528;&#x6765;&#x5728;&#x91CD;&#x5B9A;&#x5411;&#x4E2D;&#x5408;&#x5E76;&#x6D41;&#xFF0C;&#x4F46;&#x662F;&#x4E24;&#x8005;&#x4E4B;&#x95F4;&#x6709;&#x4E00;&#x4E2A;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x4E0D;&#x540C;&#x3002; &#x7136;&#x800C;&#xFF0C;&#x4E00;&#x4E2A;&#x7EC4;&#x547D;&#x4EE4;&#x5728;&#x5F53;&#x524D; shell &#x4E2D;&#x6267;&#x884C;&#x5B83;&#x7684;&#x6240;&#x6709;&#x547D;&#x4EE4;&#xFF0C;&#x800C;&#x4E00;&#x4E2A;&#x5B50; shell&#xFF08;&#x987E;&#x540D;&#x601D;&#x4E49;&#xFF09;&#x5728;&#x5F53;&#x524D; shell &#x7684;&#x4E00;&#x4E2A; &#x5B50;&#x526F;&#x672C;&#x4E2D;&#x6267;&#x884C;&#x5B83;&#x7684;&#x547D;&#x4EE4;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x88AB;&#x590D;&#x5236;&#x7ED9;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x7684; shell &#x5B9E;&#x4F8B;&#x3002;&#x5F53;&#x8FD9;&#x4E2A;&#x5B50; shell &#x9000;&#x51FA;&#x65F6;&#xFF0C;&#x73AF;&#x5883;&#x526F;&#x672C;&#x4F1A;&#x6D88;&#x5931;&#xFF0C; &#x6240;&#x4EE5;&#x5728;&#x5B50; shell &#x73AF;&#x5883;&#xFF08;&#x5305;&#x62EC;&#x53D8;&#x91CF;&#x8D4B;&#x503C;&#xFF09;&#x4E2D;&#x7684;&#x4EFB;&#x4F55;&#x66F4;&#x6539;&#x4E5F;&#x4F1A;&#x6D88;&#x5931;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5728;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x9664;&#x975E;&#x811A;&#x672C;&#x8981;&#x6C42;&#x4E00;&#x4E2A;&#x5B50; shell&#xFF0C; &#x7EC4;&#x547D;&#x4EE4;&#x6BD4;&#x5B50; shell &#x66F4;&#x53D7;&#x6B22;&#x8FCE;&#x3002;&#x7EC4;&#x547D;&#x4EE4;&#x8FD0;&#x884C;&#x5F88;&#x5FEB;&#x5E76;&#x4E14;&#x5360;&#x7528;&#x7684;&#x5185;&#x5B58;&#x4E5F;&#x5C11;&#x3002;</p>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x53D1;&#x73B0;&#x7BA1;&#x9053;&#x7EBF;&#x4E2D;&#x7684;&#x4E00;&#x4E2A; read &#x547D;&#x4EE4; &#x4E0D;&#x6309;&#x6211;&#x4EEC;&#x6240;&#x671F;&#x671B;&#x7684;&#x90A3;&#x6837;&#x5DE5;&#x4F5C;&#x7684;&#x65F6;&#x5019;&#x3002;&#x4E3A;&#x4E86;&#x91CD;&#x73B0;&#x95EE;&#x9898;&#xFF0C;&#x6211;&#x4EEC;&#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x50CF;&#x8FD9;&#x6837;&#x7684;&#x7BA1;&#x9053;&#x7EBF;&#xFF1A;</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;foo&quot;</span> | <span class="hljs-built_in">read</span>
+<span class="hljs-built_in">echo</span> <span class="hljs-variable">$REPLY</span>
+</code></pre>
+<p>&#x8BE5; REPLY &#x53D8;&#x91CF;&#x7684;&#x5185;&#x5BB9;&#x603B;&#x662F;&#x4E3A;&#x7A7A;&#xFF0C;&#x662F;&#x56E0;&#x4E3A;&#x8FD9;&#x4E2A; read &#x547D;&#x4EE4;&#x5728;&#x4E00;&#x4E2A;&#x5B50; shell &#x4E2D;&#x6267;&#x884C;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x7684; REPLY &#x526F;&#x672C;&#x4F1A;&#x88AB;&#x6BC1;&#x6389;&#xFF0C; &#x5F53;&#x8BE5;&#x5B50; shell &#x7EC8;&#x6B62;&#x7684;&#x65F6;&#x5019;&#x3002;&#x56E0;&#x4E3A;&#x7BA1;&#x9053;&#x7EBF;&#x4E2D;&#x7684;&#x547D;&#x4EE4;&#x603B;&#x662F;&#x5728;&#x5B50; shell &#x4E2D;&#x6267;&#x884C;&#xFF0C;&#x4EFB;&#x4F55;&#x7ED9;&#x53D8;&#x91CF;&#x8D4B;&#x503C;&#x7684;&#x547D;&#x4EE4;&#x90FD;&#x4F1A;&#x906D;&#x9047;&#x8FD9;&#x6837;&#x7684;&#x95EE;&#x9898;&#x3002; &#x5E78;&#x8FD0;&#x5730;&#x662F;&#xFF0C;shell &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x5947;&#x5F02;&#x7684;&#x5C55;&#x5F00;&#x65B9;&#x5F0F;&#xFF0C;&#x53EB;&#x505A;&#x8FDB;&#x7A0B;&#x66FF;&#x6362;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x89E3;&#x51B3;&#x8FD9;&#x79CD;&#x9EBB;&#x70E6;&#x3002;&#x8FDB;&#x7A0B;&#x66FF;&#x6362;&#x6709;&#x4E24;&#x79CD;&#x8868;&#x8FBE;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<p>&#x4E00;&#x79CD;&#x9002;&#x7528;&#x4E8E;&#x4EA7;&#x751F;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#x7684;&#x8FDB;&#x7A0B;&#xFF1A;</p>
+<pre><code class="lang-bash">&lt;(list)
+</code></pre>
+<p>&#x53E6;&#x4E00;&#x79CD;&#x9002;&#x7528;&#x4E8E;&#x63A5;&#x53D7;&#x6807;&#x51C6;&#x8F93;&#x5165;&#x7684;&#x8FDB;&#x7A0B;&#xFF1A;</p>
+<pre><code class="lang-bash">&gt;(list)
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x7684; list &#x662F;&#x4E00;&#x4E32;&#x547D;&#x4EE4;&#x5217;&#x8868;&#xFF1A;</p>
+<p>&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x6211;&#x4EEC;&#x7684; read &#x547D;&#x4EE4;&#x95EE;&#x9898;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x96C7;&#x4F63;&#x8FDB;&#x7A0B;&#x66FF;&#x6362;&#xFF0C;&#x50CF;&#x8FD9;&#x6837;&#x3002;</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">read</span> &lt; &lt;(<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;foo&quot;</span>)
+<span class="hljs-built_in">echo</span> <span class="hljs-variable">$REPLY</span>
+</code></pre>
+<p>&#x8FDB;&#x7A0B;&#x66FF;&#x6362;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x628A;&#x4E00;&#x4E2A;&#x5B50; shell &#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x5F53;&#x4F5C;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x91CD;&#x5B9A;&#x5411;&#x7684;&#x666E;&#x901A;&#x6587;&#x4EF6;&#x3002;&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x662F;&#x4E00;&#x79CD;&#x5C55;&#x5F00;&#x5F62;&#x5F0F;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x68C0;&#x9A8C;&#x5B83;&#x7684;&#x771F;&#x5B9E;&#x503C;&#xFF1A;</p>
+<pre><code class="lang-bash">[me@linuxbox ~]$ <span class="hljs-built_in">echo</span> &lt;(<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;foo&quot;</span>)
+/dev/fd/63
+</code></pre>
+<p>&#x901A;&#x8FC7;&#x4F7F;&#x7528; echo &#x547D;&#x4EE4;&#xFF0C;&#x67E5;&#x770B;&#x5C55;&#x5F00;&#x7ED3;&#x679C;&#xFF0C;&#x6211;&#x4EEC;&#x770B;&#x5230;&#x5B50; shell &#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#xFF0C;&#x7531;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; /dev/fd/63 &#x7684;&#x6587;&#x4EF6;&#x63D0;&#x4F9B;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="async.html" class="navigation navigation-prev " aria-label="Previous page: 异步任务">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="file-operation.html" class="navigation navigation-next " aria-label="Next page: 文件操作">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Shell 的命令","level":"1.7.3","depth":2,"next":{"title":"文件操作","level":"1.7.4","depth":2,"path":"docs/archives/file-operation.md","ref":"docs/archives/file-operation.md","articles":[]},"previous":{"title":"异步任务","level":"1.7.2","depth":2,"path":"docs/archives/async.md","ref":"docs/archives/async.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/archives/command.md","mtime":"2020-05-21T03:39:58.357Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-21T07:21:03.133Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

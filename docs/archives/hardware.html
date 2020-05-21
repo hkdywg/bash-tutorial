@@ -1,0 +1,1457 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>硬件操作 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="host.html" />
+    
+    
+    <link rel="prev" href="file.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../intro.html">
+            
+                <a href="../intro.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../startup.html">
+            
+                <a href="../startup.html">
+            
+                    
+                    启动环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../prompt.html">
+            
+                <a href="../prompt.html">
+            
+                    
+                    命令提示符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../README_grammar.html">
+            
+                <a href="../../README_grammar.html">
+            
+                    
+                    bash语法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../grammar.html">
+            
+                <a href="../grammar.html">
+            
+                    
+                    基本语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../expansion.html">
+            
+                <a href="../expansion.html">
+            
+                    
+                    模式扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../quotation.html">
+            
+                <a href="../quotation.html">
+            
+                    
+                    引号和转义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../variable.html">
+            
+                <a href="../variable.html">
+            
+                    
+                    变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../string.html">
+            
+                <a href="../string.html">
+            
+                    
+                    字符串操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../arithmetic.html">
+            
+                <a href="../arithmetic.html">
+            
+                    
+                    算术运算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../readline.html">
+            
+                <a href="../readline.html">
+            
+                    
+                    行操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../stack.html">
+            
+                <a href="../stack.html">
+            
+                    
+                    目录堆栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../condition.html">
+            
+                <a href="../condition.html">
+            
+                    
+                    条件判断
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../loop.html">
+            
+                <a href="../loop.html">
+            
+                    
+                    循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../function.html">
+            
+                <a href="../function.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="../array.html">
+            
+                <a href="../array.html">
+            
+                    
+                    数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../README_commond.html">
+            
+                <a href="../../README_commond.html">
+            
+                    
+                    命令
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../script.html">
+            
+                <a href="../script.html">
+            
+                    
+                    脚本入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../debug.html">
+            
+                <a href="../debug.html">
+            
+                    
+                    脚本除错
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../mktemp.html">
+            
+                <a href="../mktemp.html">
+            
+                    
+                    mktemp 命令，trap 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../read.html">
+            
+                <a href="../read.html">
+            
+                    
+                    read 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../set.html">
+            
+                <a href="../set.html">
+            
+                    
+                    set 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="commond/awk.md">
+            
+                <span>
+            
+                    
+                    awk 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="commond/cal.md">
+            
+                <span>
+            
+                    
+                    cal 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="commond/cat.md">
+            
+                <span>
+            
+                    
+                    cat 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="commond/clear.md">
+            
+                <span>
+            
+                    
+                    clear 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="commond/cp.md">
+            
+                <span>
+            
+                    
+                    cp 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="commond/cut.md">
+            
+                <span>
+            
+                    
+                    cut 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="commond/date.md">
+            
+                <span>
+            
+                    
+                    date 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="commond/dd.md">
+            
+                <span>
+            
+                    
+                    dd 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="commond/df.md">
+            
+                <span>
+            
+                    
+                    df 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="commond/du.md">
+            
+                <span>
+            
+                    
+                    du 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="commond/egrep.md">
+            
+                <span>
+            
+                    
+                    egrep 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="commond/export.md">
+            
+                <span>
+            
+                    
+                    export 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18" data-path="commond/file.md">
+            
+                <span>
+            
+                    
+                    file 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.19" data-path="commond/find.md">
+            
+                <span>
+            
+                    
+                    find 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.20" data-path="commond/fmt.md">
+            
+                <span>
+            
+                    
+                    fmt 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.21" data-path="commond/grep.md">
+            
+                <span>
+            
+                    
+                    grep 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22" data-path="commond/gunzip.md">
+            
+                <span>
+            
+                    
+                    gunzip 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.23" data-path="commond/gacat.md">
+            
+                <span>
+            
+                    
+                    gzcat 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.24" data-path="commond/gzip.md">
+            
+                <span>
+            
+                    
+                    gzip 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.25" data-path="commond/kill.md">
+            
+                <span>
+            
+                    
+                    kill 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.26" data-path="commond/kilall.md">
+            
+                <span>
+            
+                    
+                    killall 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.27" data-path="commond/last.md">
+            
+                <span>
+            
+                    
+                    last 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.28" data-path="commond/lpq.md">
+            
+                <span>
+            
+                    
+                    lpq 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.29" data-path="commond/lpr.md">
+            
+                <span>
+            
+                    
+                    lpr 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.30" data-path="commond/ls.md">
+            
+                <span>
+            
+                    
+                    ls 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.31" data-path="commond/nl.md">
+            
+                <span>
+            
+                    
+                    nl 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.32" data-path="commond/ps.md">
+            
+                <span>
+            
+                    
+                    ps 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.33" data-path="commond/scp.md">
+            
+                <span>
+            
+                    
+                    scp 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.34" data-path="commond/sed.md">
+            
+                <span>
+            
+                    
+                    sed 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.35" data-path="commond/sort.md">
+            
+                <span>
+            
+                    
+                    sort 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.36" data-path="commond/tr.md">
+            
+                <span>
+            
+                    
+                    tr 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.37" data-path="commond/uname.md">
+            
+                <span>
+            
+                    
+                    uname 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.38" data-path="commond/uniq.md">
+            
+                <span>
+            
+                    
+                    uniq 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.39" data-path="commond/uptime.md">
+            
+                <span>
+            
+                    
+                    uptime 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.40" data-path="commond/w.md">
+            
+                <span>
+            
+                    
+                    w 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.41" data-path="commond/wc.md">
+            
+                <span>
+            
+                    
+                    wc 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.42" data-path="commond/whereis.md">
+            
+                <span>
+            
+                    
+                    whereis 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.43" data-path="commond/which.md">
+            
+                <span>
+            
+                    
+                    which 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.44" data-path="commond/who.md">
+            
+                <span>
+            
+                    
+                    who 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../README_sysapp.html">
+            
+                <a href="../../README_sysapp.html">
+            
+                    
+                    系统应用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="arithmetic.md">
+            
+                <span>
+            
+                    
+                    归档和备份
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="async.html">
+            
+                <a href="async.html">
+            
+                    
+                    异步任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="command.html">
+            
+                <a href="command.html">
+            
+                    
+                    Shell 的命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="file-operation.html">
+            
+                <a href="file-operation.html">
+            
+                    
+                    文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="file.html">
+            
+                <a href="file.html">
+            
+                    
+                    文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.6" data-path="hardware.html">
+            
+                <a href="hardware.html">
+            
+                    
+                    硬件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="host.html">
+            
+                <a href="host.html">
+            
+                    
+                    主机管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="named-pipe.html">
+            
+                <a href="named-pipe.html">
+            
+                    
+                    命名管道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="process.html">
+            
+                <a href="process.html">
+            
+                    
+                    进程管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="redirection.html">
+            
+                <a href="redirection.html">
+            
+                    
+                    重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="regex.html">
+            
+                <a href="regex.html">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="system.html">
+            
+                <a href="system.html">
+            
+                    
+                    系统信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.13" data-path="text.html">
+            
+                <a href="text.html">
+            
+                    
+                    文本处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.14" data-path="time.html">
+            
+                <a href="time.html">
+            
+                    
+                    时间管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.15" data-path="user.html">
+            
+                <a href="user.html">
+            
+                    
+                    用户管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >硬件操作</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x786C;&#x4EF6;&#x64CD;&#x4F5C;">&#x786C;&#x4EF6;&#x64CD;&#x4F5C;</h1>
+<h2 id="df">df</h2>
+<p><code>df</code>&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x786C;&#x76D8;&#x4FE1;&#x606F;&#x3002;</p>
+<pre><code class="lang-bash">$ df
+Filesystem 1K-blocks Used Available Use% Mounted on
+/dev/sda2 15115452 5012392 9949716 34% /
+/dev/sda5 59631908 26545424 30008432 47% /home
+/dev/sda1 147764 17370 122765 13% /boot
+</code></pre>
+<h2 id="free">free</h2>
+<p><code>free</code>&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x5185;&#x5B58;&#x5360;&#x7528;&#x60C5;&#x51B5;&#x3002;</p>
+<pre><code class="lang-bash">$ free
+ total used free shared buffers cached
+Mem: 513712 503976 9736 0 5312 122916
+-/+ buffers/cache: 375748 137964
+Swap: 1052248 104712 947536
+</code></pre>
+<h2 id="&#x786C;&#x76D8;">&#x786C;&#x76D8;</h2>
+<p>&#x6587;&#x4EF6;<code>/etc/fstab</code>&#x914D;&#x7F6E;&#x7CFB;&#x7EDF;&#x542F;&#x52A8;&#x65F6;&#x8981;&#x6302;&#x8F7D;&#x7684;&#x8BBE;&#x5907;&#x3002;</p>
+<pre><code>LABEL=/12               /               ext3        defaults        1   1
+LABEL=/home             /home           ext3        defaults        1   2
+LABEL=/boot             /boot           ext3        defaults        1   2
+</code></pre><p>&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x4E00;&#x5171;&#x6709;6&#x4E2A;&#x5B57;&#x6BB5;&#xFF0C;&#x542B;&#x4E49;&#x4F9D;&#x6B21;&#x5982;&#x4E0B;&#x3002;</p>
+<ul>
+<li>&#x8BBE;&#x5907;&#x540D;&#xFF1A;&#x4E0E;&#x7269;&#x7406;&#x8BBE;&#x5907;&#x76F8;&#x5173;&#x8054;&#x7684;&#x8BBE;&#x5907;&#x6587;&#x4EF6;&#xFF08;&#x6216;&#x8BBE;&#x5907;&#x6807;&#x7B7E;&#xFF09;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;<code>/dev/hda1</code>&#xFF08;&#x7B2C;&#x4E00;&#x4E2A; IDE &#x901A;&#x9053;&#x4E0A;&#x7B2C;&#x4E00;&#x4E2A;&#x4E3B;&#x8BBE;&#x5907;&#x5206;&#x533A;&#xFF09;&#x3002;</li>
+<li>&#x6302;&#x8F7D;&#x70B9;&#xFF1A;&#x8BBE;&#x5907;&#x6240;&#x8FDE;&#x63A5;&#x5230;&#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x6811;&#x7684;&#x76EE;&#x5F55;&#x3002;</li>
+<li>&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7C7B;&#x578B;&#xFF1A;Linux &#x5141;&#x8BB8;&#x6302;&#x8F7D;&#x8BB8;&#x591A;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7C7B;&#x578B;&#x3002;</li>
+<li>&#x9009;&#x9879;&#xFF1A;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5404;&#x79CD;&#x5404;&#x6837;&#x7684;&#x9009;&#x9879;&#x6765;&#x6302;&#x8F7D;&#x3002;</li>
+<li>&#x9891;&#x7387;&#xFF1A;&#x4E00;&#x4F4D;&#x6570;&#x5B57;&#xFF0C;&#x6307;&#x5B9A;&#x662F;&#x5426;&#x548C;&#x5728;&#x4EC0;&#x4E48;&#x65F6;&#x95F4;&#x7528; dump &#x547D;&#x4EE4;&#x6765;&#x5907;&#x4EFD;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x3002;</li>
+<li>&#x6B21;&#x5E8F;&#xFF1A;&#x4E00;&#x4F4D;&#x6570;&#x5B57;&#xFF0C;&#x6307;&#x5B9A; fsck &#x547D;&#x4EE4;&#x6309;&#x7167;&#x4EC0;&#x4E48;&#x6B21;&#x5E8F;&#x6765;&#x68C0;&#x67E5;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x3002;</li>
+</ul>
+<h2 id="mount">mount</h2>
+<p><code>mount</code>&#x4E0D;&#x5E26;&#x53C2;&#x6570;&#x65F6;&#xFF0C;&#x663E;&#x793A;&#x5F53;&#x524D;&#x6302;&#x8F7D;&#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x3002;</p>
+<pre><code class="lang-bash">$ mount
+/dev/sda2 on / <span class="hljs-built_in">type</span> ext3 (rw)
+proc on /proc <span class="hljs-built_in">type</span> proc (rw)
+sysfs on /sys <span class="hljs-built_in">type</span> sysfs (rw)
+devpts on /dev/pts <span class="hljs-built_in">type</span> devpts (rw,gid=5,mode=620)
+/dev/sda5 on /home <span class="hljs-built_in">type</span> ext3 (rw)
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x5217;&#x8868;&#x7684;&#x683C;&#x5F0F;&#x662F;&#xFF1A;&#x8BBE;&#x5907; on &#x6302;&#x8F7D;&#x70B9; type &#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7C7B;&#x578B;&#xFF08;&#x53EF;&#x9009;&#x7684;&#xFF09;&#x3002;</p>
+<p><code>mount</code>&#x5E26;&#x53C2;&#x6570;&#x65F6;&#xFF0C;&#x7528;&#x4E8E;&#x5C06;&#x8BBE;&#x5907;&#x6587;&#x4EF6;&#x6302;&#x8F7D;&#x5230;&#x6302;&#x8F7D;&#x70B9;&#xFF0C;<code>-t</code>&#x53C2;&#x6570;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7C7B;&#x578B;&#x3002;</p>
+<pre><code class="lang-bash">$ mount -t iso9660 /dev/hdc /mnt/cdrom
+
+<span class="hljs-comment"># &#x6302;&#x8F7D;&#x4E00;&#x4E2A;iso&#x6587;&#x4EF6;</span>
+$ mount -t iso9660 -o loop image.iso /mnt/iso_image
+</code></pre>
+<h2 id="umount">umount</h2>
+<p><code>umount</code>&#x547D;&#x4EE4;&#x7528;&#x6765;&#x5378;&#x8F7D;&#x8BBE;&#x5907;&#x3002;</p>
+<pre><code class="lang-bash">$ umount [&#x8BBE;&#x5907;&#x540D;]
+
+$ umount /dev/hdc
+</code></pre>
+<h2 id="fdisk">fdisk</h2>
+<p><code>fdisk</code>&#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x683C;&#x5F0F;&#x5316;&#x78C1;&#x76D8;&#x3002;</p>
+<pre><code class="lang-bash">$ sudo umount /dev/sdb1
+$ sudo fdisk /dev/sdb
+</code></pre>
+<h2 id="mkfs">mkfs</h2>
+<p><code>mkfs</code>&#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x5728;&#x4E00;&#x4E2A;&#x8BBE;&#x5907;&#x4E0A;&#x65B0;&#x5EFA;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x3002;</p>
+<pre><code class="lang-bash">$ sudo mkfs -t ext3 /dev/sdb1
+$ sudo mkfs -t vfat /dev/sdb1
+</code></pre>
+<h2 id="fsck">fsck</h2>
+<p><code>fsck</code>&#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x68C0;&#x67E5;&#xFF08;&#x4FEE;&#x590D;&#xFF09;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x3002;</p>
+<pre><code class="lang-bash">$ sudo fsck /dev/sdb1
+</code></pre>
+<h2 id="dd">dd</h2>
+<p><code>dd</code>&#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x5C06;&#x5927;&#x578B;&#x6570;&#x636E;&#x5757;&#xFF0C;&#x4ECE;&#x4E00;&#x4E2A;&#x78C1;&#x76D8;&#x590D;&#x5236;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x78C1;&#x76D8;&#x3002;</p>
+<pre><code class="lang-bash">$ dd <span class="hljs-keyword">if</span>=input_file of=output_file [bs=block_size [count=blocks]]
+
+<span class="hljs-comment"># &#x5C06; /dev/sdb &#x7684;&#x6240;&#x6709;&#x6570;&#x636E;&#x590D;&#x5236;&#x5230; /dev/sdc</span>
+$ dd <span class="hljs-keyword">if</span>=/dev/sdb of=/dev/sdc
+
+<span class="hljs-comment"># &#x5C06; /dev/sdb &#x7684;&#x6240;&#x6709;&#x6570;&#x636E;&#x62F7;&#x8D1D;&#x5230;&#x4E00;&#x4E2A;&#x955C;&#x50CF;&#x6587;&#x4EF6;</span>
+$ dd <span class="hljs-keyword">if</span>=/dev/sdb of=flash_drive.img
+
+<span class="hljs-comment"># &#x4ECE;cdrom&#x5236;&#x4F5C;&#x4E00;&#x4E2A;iso&#x6587;&#x4EF6;</span>
+$ dd <span class="hljs-keyword">if</span>=/dev/cdrom of=ubuntu.iso
+</code></pre>
+<h2 id="dmidecode">dmidecode</h2>
+<p><code>dmidecode</code>&#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x8F93;&#x51FA;BIOS&#x4FE1;&#x606F;&#x3002;</p>
+<pre><code class="lang-bash">$ sudo dmidecode
+</code></pre>
+<p>&#x4EE5;&#x4E0A;&#x547D;&#x4EE4;&#x4F1A;&#x8F93;&#x51FA;&#x5168;&#x90E8;BIOS&#x4FE1;&#x606F;&#x3002;&#x4E3A;&#x4E86;&#x4FBF;&#x4E8E;&#x67E5;&#x770B;&#xFF0C;&#x5F80;&#x5F80;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x6240;&#x9700;&#x4FE1;&#x606F;&#x7684;&#x7C7B;&#x522B;&#x3002;</p>
+<ul>
+<li>0 BIOS</li>
+<li>1 System</li>
+<li>2 Base Board</li>
+<li>3 Chassis 4 Processor</li>
+<li>5 Memory Controller</li>
+<li>6 Memory Module</li>
+<li>7 Cache</li>
+<li>8 Port Connector</li>
+<li>9 System Slots</li>
+<li>10 On Board Devices</li>
+<li>11 OEM Strings</li>
+<li>12 System Configuration Options</li>
+<li>13 BIOS Language</li>
+<li>14 Group Associations</li>
+<li>15 System Event Log</li>
+<li>16 Physical Memory Array</li>
+<li>17 Memory Device</li>
+<li>18 32-bit Memory Error</li>
+<li>19 Memory Array Mapped Address</li>
+<li>20 Memory Device Mapped Address</li>
+<li>21 Built-in Pointing Device</li>
+<li>22 Portable Battery</li>
+<li>23 System Reset</li>
+<li>24 Hardware Security</li>
+<li>25 System Power Controls</li>
+<li>26 Voltage Probe</li>
+<li>27 Cooling Device</li>
+<li>28 Temperature Probe</li>
+<li>29 Electrical Current Probe</li>
+<li>30 Out-of-band Remote Access</li>
+<li>31 Boot Integrity Services</li>
+<li>32 System Boot</li>
+<li>33 64-bit Memory Error</li>
+<li>34 Management Device</li>
+<li>35 Management Device Component</li>
+<li>36 Management Device Threshold Data</li>
+<li>37 Memory Channel</li>
+<li>38 IPMI Device</li>
+<li>39 Power Supply</li>
+</ul>
+<p>&#x67E5;&#x770B;&#x5185;&#x5B58;&#x4FE1;&#x606F;&#x7684;&#x547D;&#x4EE4;&#x5982;&#x4E0B;&#x3002;</p>
+<pre><code class="lang-bash">$ sudo dmidecode -t 17
+<span class="hljs-comment"># &#x6216;&#x8005;</span>
+$ dmidecode --type 17
+</code></pre>
+<p>&#x4EE5;&#x4E0B;&#x662F;&#x5176;&#x4ED6;&#x4E00;&#x4E9B;&#x9009;&#x9879;&#x3002;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x67E5;&#x770B;BIOS&#x4FE1;&#x606F;</span>
+$ sudo dmidecode &#x2013;t 0
+
+<span class="hljs-comment"># &#x67E5;&#x770B;CPU&#x4FE1;&#x606F;</span>
+$ sudo dmidecode -t 4
+</code></pre>
+<p><code>dmidecode</code>&#x4E5F;&#x652F;&#x6301;&#x5173;&#x952E;&#x8BCD;&#x67E5;&#x770B;&#xFF0C;&#x5173;&#x952E;&#x8BCD;&#x4E0E;&#x7C7B;&#x522B;&#x7684;&#x5BF9;&#x5E94;&#x5173;&#x7CFB;&#x5982;&#x4E0B;&#x3002;</p>
+<ul>
+<li>bios 0, 13</li>
+<li>system 1, 12, 15, 23, 32</li>
+<li>baseboard 2, 10</li>
+<li>chassis 3</li>
+<li>processor 4</li>
+<li>memory 5, 6, 16, 17</li>
+<li>cache 7</li>
+<li>connector 8</li>
+<li>slot 9</li>
+</ul>
+<p>&#x67E5;&#x770B;&#x7CFB;&#x7EDF;&#x4FE1;&#x606F;&#x7684;&#x547D;&#x4EE4;&#x5982;&#x4E0B;&#x3002;</p>
+<pre><code class="lang-bash">$ sudo dmidecode -t system
+</code></pre>
+<h2 id="lspci">lspci</h2>
+<p><code>lspci</code>&#x547D;&#x4EE4;&#x5217;&#x51FA;&#x672C;&#x673A;&#x7684;&#x6240;&#x6709;PCI&#x8BBE;&#x5907;&#x3002;</p>
+<pre><code class="lang-bash">$ lspci
+</code></pre>
+<p>&#x8BE5;&#x547D;&#x4EE4;&#x8F93;&#x51FA;&#x4FE1;&#x606F;&#x7684;&#x683C;&#x5F0F;&#x5982;&#x4E0B;&#x3002;</p>
+<pre><code class="lang-bash">03:00.0 Unassigned class [ff00]: Realtek Semiconductor Co., Ltd. RTS5209 PCI Express Card Reader (rev 01)
+</code></pre>
+<p>&#x8F93;&#x51FA;&#x4FE1;&#x606F;&#x4E00;&#x5171;&#x5206;&#x6210;&#x4E09;&#x4E2A;&#x5B57;&#x6BB5;&#x3002;</p>
+<ul>
+<li>Field 1&#xFF1A;PCI bus slot &#x7684;&#x7F16;&#x53F7;</li>
+<li>Field 2&#xFF1A;PCI slot&#x7684;&#x540D;&#x5B57;</li>
+<li>Field 3&#xFF1A;&#x8BBE;&#x5907;&#x540D;&#x548C;&#x5382;&#x5546;&#x540D;</li>
+</ul>
+<p>&#x5982;&#x679C;&#x60F3;&#x67E5;&#x770B;&#x66F4;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
+<pre><code class="lang-bash">$ lspci -vmm
+</code></pre>
+<h2 id="lsusb">lsusb</h2>
+<p><code>lsusb</code>&#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x64CD;&#x4F5C;USB&#x7AEF;&#x53E3;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x547D;&#x4EE4;&#x5217;&#x51FA;&#x672C;&#x673A;&#x6240;&#x6709;USB&#x7AEF;&#x53E3;&#x3002;</p>
+<pre><code class="lang-bash">$ lsusb
+</code></pre>
+<p>&#x5B83;&#x7684;&#x8F93;&#x51FA;&#x683C;&#x5F0F;&#x5982;&#x4E0B;&#x3002;</p>
+<pre><code class="lang-bash">Bus 002 Device 003: ID 0781:5567 SanDisk Corp. Cruzer Blade
+</code></pre>
+<p>&#x5404;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x542B;&#x4E49;&#x5982;&#x4E0B;&#x3002;</p>
+<ul>
+<li>Bus 002 : bus&#x7F16;&#x53F7;</li>
+<li>Device 003&#xFF1A;bus 002&#x8FDE;&#x63A5;&#x7684;&#x7B2C;&#x4E09;&#x4E2A;&#x8BBE;&#x5907;</li>
+<li>ID 0781:5567&#xFF1A;&#x5F53;&#x524D;&#x8BBE;&#x5907;&#x7684;&#x7F16;&#x53F7;&#xFF0C;&#x5192;&#x53F7;&#x524D;&#x662F;&#x5382;&#x5546;&#x7F16;&#x53F7;&#xFF0C;&#x5192;&#x53F7;&#x540E;&#x662F;&#x8BBE;&#x5907;&#x7F16;&#x53F7;</li>
+<li>SanDisk Corp. Cruzer Blade&#xFF1A;&#x5382;&#x5546;&#x548C;&#x8BBE;&#x5907;&#x540D;</li>
+</ul>
+<p>&#x627E;&#x51FA;&#x672C;&#x673A;&#x6709;&#x591A;&#x5C11;&#x4E2A;USB&#x63A5;&#x53E3;&#x53EF;&#x7528;&#x3002;</p>
+<pre><code class="lang-bash">$ find /dev/bus/
+/dev/bus/
+/dev/bus/usb
+/dev/bus/usb/002
+/dev/bus/usb/002/006
+/dev/bus/usb/002/005
+/dev/bus/usb/002/004
+/dev/bus/usb/002/002
+/dev/bus/usb/002/001
+/dev/bus/usb/001
+/dev/bus/usb/001/007
+/dev/bus/usb/001/003
+/dev/bus/usb/001/002
+/dev/bus/usb/001/001
+</code></pre>
+<p>&#x67E5;&#x770B;&#x67D0;&#x4E2A;USB&#x8BBE;&#x5907;&#x7684;&#x8BE6;&#x7EC6;&#x60C5;&#x51B5;&#x3002;</p>
+<pre><code class="lang-bash">$ lsusb -D /dev/bus/usb/002/005
+</code></pre>
+<p>&#x67E5;&#x770B;&#x6240;&#x6709;&#x8BBE;&#x5907;&#x7684;&#x8BE6;&#x7EC6;&#x60C5;&#x51B5;&#x3002;</p>
+<pre><code class="lang-bash">$ lsusb -v
+</code></pre>
+<p>&#x67E5;&#x770B;USB&#x7AEF;&#x53E3;&#x7684;&#x7248;&#x672C;&#x3002;</p>
+<pre><code class="lang-bash">$ lsusb -v | grep -i bcdusb
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="file.html" class="navigation navigation-prev " aria-label="Previous page: 文件系统">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="host.html" class="navigation navigation-next " aria-label="Next page: 主机管理">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"硬件操作","level":"1.7.6","depth":2,"next":{"title":"主机管理","level":"1.7.7","depth":2,"path":"docs/archives/host.md","ref":"docs/archives/host.md","articles":[]},"previous":{"title":"文件系统","level":"1.7.5","depth":2,"path":"docs/archives/file.md","ref":"docs/archives/file.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/archives/hardware.md","mtime":"2020-05-21T03:39:58.373Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-21T07:21:03.133Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
